@@ -1,4 +1,4 @@
 # Portfolio
-Hello,I'm Shlok Garg.I had created my Portfolio using HTML,CSS,Bootstrap,JQuery and Javascript.Hope you will like it.
-CLICK BELOW....
+Here is my Portfolio. You can visit this and have a look at my work.
+CLICK BELOW....<br>
 https://vngarg.github.io/Portfolio/
