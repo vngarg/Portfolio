@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/vngarg/Portfolio/issues"
   },
-  "homepage": "https://github.com/vngarg/Portfolio#readme"
+  "homepage": "https://github.com/vngarg/Portfolio#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.11"
+  }
 }
