@@ -33,6 +33,7 @@ body {
   height: 70px;
   font-size: 25px;
   background-color: var(--color-blueShade);
+  border: 3px solid var(--color-blueShade);
 }
 
 @keyframes buttonAnimation {
@@ -50,58 +51,63 @@ body {
 .button:hover {
   height: 80px;
   width: 220px;
-  background-color: rgb(25, 26, 29);
-  border: 3px solid rgb(75, 108, 193);
-  animation-duration: 0.2s;
+  background-color: transparent;
+  border: 3px solid var(--color-blueShade);
+  animation-duration: 0.5s;
   animation-name: buttonAnimation;
 }
 
 .particles {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 160vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 160vh;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .Hero {
-    height: 80vh;
+    height: 120vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   }
   .HeroImage {
-    height: 160px;
-    width: 160px;
+    height: 170px;
+    width: 170px;
+    margin-bottom: 20px;
   }
   .HeroText {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .Heading {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
   .button {
-    width: 120px;
-    height: 40px;
-    font-size: 10px;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
   }
 
   @keyframes buttonAnimation {
     from {
-      width: 100px;
-      height: 30px;
-      font-size: 10px;
+      width: 140px;
+      height: 50px;
+      font-size: 20px;
     }
     to {
-      height: 40px;
-      width: 130px;
+      height: 60px;
+      width: 160px;
     }
   }
 
   .button:hover {
-    height: 35px;
-    width: 130px;
+    outline: none;
+    box-shadow: none;
+    height: 60px;
+    width: 160px;
     animation-duration: 0.2s;
     animation-name: buttonAnimation;
   }
   .particles {
-    height: 80vh;
+    height: 120vh;
   }
 }
