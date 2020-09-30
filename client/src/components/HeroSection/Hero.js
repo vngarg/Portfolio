@@ -11,17 +11,17 @@ class Hero extends Component {
         <div className="Hero">
           <Container>
             <Row className="m-0">
+              <Col xl={6} sm={12}>
+                <img src={Shlok} alt="Shlok" className="HeroImage" />
+              </Col>
               <Col xl={6} sm={12} className="text-left">
                 <div className="Heading">Hey, I'm Shlok Garg.</div>
                 <div className="HeroText">
-                  A Web and Android developer from New Delhi, India. I create
+                  A MERN Stack developer and an Android developer from New Delhi, India. I create
                   appealing websites and Android apps.
                 </div>
                 <br />
                 <Button className="button">My Projects</Button>
-              </Col>
-              <Col xl={6} sm={12}>
-                <img src={Shlok} alt="Shlok" className="HeroImage" />
               </Col>
             </Row>
           </Container>
