@@ -56,6 +56,13 @@ body {
   animation-name: buttonAnimation;
 }
 
+.particles {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 160vh;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .Hero {
     height: 80vh;
@@ -93,5 +100,8 @@ body {
     width: 130px;
     animation-duration: 0.2s;
     animation-name: buttonAnimation;
+  }
+  .particles {
+    height: 80vh;
   }
 }
