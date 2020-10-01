@@ -34,10 +34,11 @@ li {
 @media screen and (min-width: 320px) and (max-width: 480px) {
     ul {
         /* font-size: 1rem; */
-        display: none;
         flex-flow: column nowrap;
         background-color: green;
         position: fixed;
+        transform: if(open)  translateX(0) else translateX(100%);
+        transition: transform 0.3s ease-in-out;
         top: 0;
         right: 0;
         height: 100vh;

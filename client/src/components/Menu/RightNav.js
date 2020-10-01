@@ -1,9 +1,9 @@
 import React from "react";
 import "./Menu.css";
 
-const RightNav = () => {
+const RightNav = ({ open }) => {
   return (
-    <ul>
+    <ul open={open}>
       <li>Home</li>
       <li>Experience</li>
       <li>Projects</li>

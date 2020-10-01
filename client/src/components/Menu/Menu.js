@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './Menu.css';
-import RightNav from './RightNav';
 import Burger from './Burger';
 
 const Menu = () => {
@@ -11,7 +10,6 @@ const Menu = () => {
                 S.G.
             </div>
             <Burger />
-            <RightNav />
         </div>
     )
 }
