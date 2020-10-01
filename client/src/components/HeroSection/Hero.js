@@ -3,16 +3,16 @@ import { Row, Col, Button } from "reactstrap";
 import Particles from "react-particles-js";
 
 import "./Hero.css";
-import Shlok from "../../assets/images/Shlok.jpg";
+// import Shlok from "../../assets/images/Shlok.jpg";
 
 class Hero extends Component {
   render() {
     return (
         <div className="Hero">
             <Row className="m-0">
-              <Col xl={6} sm={12} className='text-center ImageDiv'>
+              {/* <Col xl={6} sm={12} className='text-center ImageDiv'>
                 <img src={Shlok} alt="Shlok" className="HeroImage" />
-              </Col>
+              </Col> */}
               <Col xl={6} sm={12} className="text-left">
                 <div className="Heading">Hey, I'm Shlok Garg.</div>
                 <div className="HeroText">
