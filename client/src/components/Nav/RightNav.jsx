@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Ul = styled.ul`
   list-style: none;
@@ -8,21 +8,19 @@ const Ul = styled.ul`
 
   li {
     padding: 18px 25px;
-    color: rgb(171,169,171);
+    color: rgb(171, 169, 171);
   }
 
   li:hover {
     cursor: pointer;
     color: white;
-    padding-bottom: 30px;
-    border-bottom: 5px solid rgb(75, 108, 193);
   }
 
-  @media (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     flex-flow: column nowrap;
     background-color: rgb(75, 108, 193);
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     z-index: 1000;
@@ -32,15 +30,34 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: rgb(171,169,171);
+      color: rgb(171, 169, 171);
     }
 
-    li:hover {
-      padding-bottom: 0;
-      width: 10px;
-      transform: 2s ease-in-out;
-      border-bottom: 5px solid black;
+    li::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: black !important;
+      transition: width 0.3s;
     }
+
+    li:hover::after {
+      width: 10%;
+    }
+  }
+
+  li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: rgb(75, 108, 193);
+    transition: width 0.3s;
+  }
+
+  li:hover::after {
+    width: 100%;
   }
 `;
 
@@ -52,7 +69,7 @@ const RightNav = ({ open }) => {
       <li>Projects</li>
       <li>Contact</li>
     </Ul>
-  )
-}
+  );
+};
 
-export default RightNav
+export default RightNav;
