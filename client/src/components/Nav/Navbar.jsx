@@ -5,14 +5,16 @@ import Burger from './Burger';
 const Nav = styled.nav`
   width: 100%;
   height: 55px;
-  border-bottom: 2px solid #f1f1f1;
   padding: 0 20px;
   display: flex;
-  background-color: transparent;
+  background-color: rgba(25, 26, 29, 1);
+  color: white;
+  font-size: 22px;
   justify-content: space-between;
 
   .logo {
-    padding: 15px 0;
+    font-size: 28px;
+    padding: 7px 22px;
   }
 `
 
@@ -20,7 +22,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        Nav Bar
+        S.G.
       </div>
       <Burger />
     </Nav>
