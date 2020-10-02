@@ -1,14 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Row, Col, Button } from "reactstrap";
 import Particles from "react-particles-js";
 import Menu from '../Nav/Navbar.jsx'; 
 
 import "./Hero.css";
+import Skills from "../Skills/Skills.js";
 // import Shlok from "../../assets/images/Shlok.jpg";
 
 class Hero extends Component {
   render() {
     return (
+      <Fragment>
         <div className="Hero">
           <Menu />
             <Row className="m-0">
@@ -39,6 +41,8 @@ class Hero extends Component {
             }}
           />
         </div>
+        <Skills />
+      </Fragment>
     );
   }
 }

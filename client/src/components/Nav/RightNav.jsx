@@ -69,10 +69,6 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <Link to='/About' className='NavComponents'>About</Link>
       <Link to='/Contact' className='NavComponents'>Contact</Link>
-      {/* <li>About</li>
-      <li>Experience</li>
-      <li>Projects</li>
-      <li>Contact</li> */}
     </Ul>
   );
 };
