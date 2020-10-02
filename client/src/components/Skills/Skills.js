@@ -42,8 +42,10 @@ const Skills = () => {
             <div className="languages">Flutter, Dart, Google Firebase</div>
             <div className="subHeading">Android Tools</div>
             <div className="tools">
-                Google Console<br />
-                Android Studio<br />
+              Google Console
+              <br />
+              Android Studio
+              <br />
             </div>
           </Col>
           <Col lg={4} sm={12} className="SkillColumn col3">
@@ -57,9 +59,12 @@ const Skills = () => {
             <div className="languages">C, C++, Java</div>
             <div className="subHeading">Programmer Tools</div>
             <div className="tools">
-                Visual Studio Code<br />
-                Codechef<br />
-                HackerEarth<br />
+              Visual Studio Code
+              <br />
+              Codechef
+              <br />
+              HackerEarth
+              <br />
             </div>
           </Col>
         </Row>
