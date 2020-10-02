@@ -41,7 +41,7 @@ class Hero extends Component {
             }}
           />
         </div>
-        <Skills />
+        <Skills /><br /><br />
       </Fragment>
     );
   }
