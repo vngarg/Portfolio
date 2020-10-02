@@ -2,7 +2,8 @@
 
 .mainDiv {
     position: relative;
-    top: -190px;
+    top: -280px;
+    z-index: 10;
 }
 
 .SkillColumn {
@@ -53,4 +54,15 @@
 
 .tools {
     padding-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .mainDiv {
+        top: -100px;
+    }
+    .SkillColumn {
+        margin: 7px 20px;
+        border-radius: 10px;
+        border-right: 1px solid var(--color-textFaded);
+    }
 }
