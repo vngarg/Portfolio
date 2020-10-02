@@ -12,7 +12,8 @@
     "react-particles-js": "^3.3.0",
     "react-popper": "^2.2.3",
     "react-scripts": "3.4.3",
-    "reactstrap": "^8.6.0"
+    "reactstrap": "^8.6.0",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
