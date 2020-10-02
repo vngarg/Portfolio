@@ -1,0 +1,40 @@
+@import '../../Globals/Colors.css';
+
+.header {
+    font-size: 25px;
+    color: var(--color-blueShade);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.description {
+    padding-bottom: 25px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.Colabbutton {
+    background-color: white;
+    color: var(--color-blueShade);
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid var(--color-blueShade);
+}
+
+.link {
+    color: var(--color-blueShade);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.Colabbutton:hover {
+    border: 2px solid var(--color-blueShade);
+    background-color: var(--color-blueShade);
+    color: white;
+}

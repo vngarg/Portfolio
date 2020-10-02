@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from "react";
 import { Row, Col, Button } from "reactstrap";
 import Particles from "react-particles-js";
-import Menu from "../Nav/Navbar.jsx";
+import Menu from "../components/Nav/Navbar.jsx";
 
 import "./Hero.css";
-import Skills from "../Skills/Skills.js";
+import Skills from "../components/Skills/Skills.js";
 import { Link } from "react-router-dom";
-// import Shlok from "../../assets/images/Shlok.jpg";
+import Shlok from "../assets/images/Shlok.jpg";
+import HomePageProjects from '../components/HomePageProjects/HomePageProjects';
+import Collaboration from "../components/Collaboration/Collaboration.js";
 
 class Hero extends Component {
   render() {
@@ -14,10 +16,10 @@ class Hero extends Component {
       <Fragment>
         <div className="Hero">
           <Menu />
-          <Row className="m-0">
-            {/* <Col xl={6} sm={12} className='text-center ImageDiv'>
+          <Row className="mr-0 mt-5">
+            <Col xl={6} sm={12} className='text-center ImageDiv'>
                 <img src={Shlok} alt="Shlok" className="HeroImage" />
-              </Col> */}
+              </Col>
             <Col xl={6} sm={12} className="text-left">
               <div className="Heading">Hey, I'm Shlok Garg.</div>
               <div className="HeroText">
@@ -42,7 +44,7 @@ class Hero extends Component {
             params={{
               particles: {
                 number: {
-                  value: 130,
+                  value: 200,
                   density: {
                     enable: true,
                     value_area: 1000,
@@ -53,6 +55,8 @@ class Hero extends Component {
           />
         </div>
         <Skills />
+        <HomePageProjects />
+        <Collaboration />
       </Fragment>
     );
   }

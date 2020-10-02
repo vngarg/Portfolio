@@ -4,6 +4,7 @@
     position: relative;
     top: -280px;
     z-index: 10;
+    height: 370px;
 }
 
 .SkillColumn {
@@ -59,6 +60,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .mainDiv {
         top: -100px;
+        height: 259vh;
     }
     .SkillColumn {
         margin: 7px 20px;
