@@ -1,4 +1,4 @@
-@import "../../Globals/Colors.css";
+@import "../Globals/Colors.css";
 
 body {
   font-family: Rubik, Arial, sans-serif;
@@ -83,16 +83,20 @@ body {
   .HeroImage {
     height: 170px;
     width: 170px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .HeroText {
     font-size: 1.2rem;
+    padding-left: 20px;
   }
   .Heading {
     font-size: 2rem;
     margin-bottom: 20px;
+    padding-left: 20px;
   }
   .button {
+    margin-left: 20px;
     width: 140px;
     height: 50px;
     font-size: 20px;
@@ -111,6 +115,8 @@ body {
     to {
       height: 60px;
       width: 160px;
+      position: relative;
+    left: -5px;
     }
   }
 

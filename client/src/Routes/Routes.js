@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Hero from '../components/HeroSection/Hero';
+import Hero from '../HeroSection/Hero';
 import Contact from '../components/ContactMe/Contact';
 
 const Routes = () => {
