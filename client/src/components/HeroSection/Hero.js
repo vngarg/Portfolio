@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Button } from "reactstrap";
 import Particles from "react-particles-js";
+import Menu from '../Nav/Navbar.jsx'; 
 
 import "./Hero.css";
 // import Shlok from "../../assets/images/Shlok.jpg";
@@ -9,6 +10,7 @@ class Hero extends Component {
   render() {
     return (
         <div className="Hero">
+          <Menu />
             <Row className="m-0">
               {/* <Col xl={6} sm={12} className='text-center ImageDiv'>
                 <img src={Shlok} alt="Shlok" className="HeroImage" />

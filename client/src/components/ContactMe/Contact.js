@@ -7,7 +7,7 @@ class Contact extends Component {
         return (
             <Fragment>
                 <div className='ContactForm'>
-                    HELLO WORLD
+                    <center>You are now on Contact Page</center>
                 </div>
             </Fragment>
         );

@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
 
-  li {
+  .NavComponents {
+    text-decoration: none;
     padding: 18px 25px;
     color: rgb(171, 169, 171);
   }
 
-  li:hover {
+  .NavComponents:hover {
     cursor: pointer;
     color: white;
   }
@@ -29,11 +31,11 @@ const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
 
-    li {
+    .NavComponents {
       color: rgb(171, 169, 171);
     }
 
-    li::after {
+    .NavComponents::after {
       content: "";
       display: block;
       width: 0;
@@ -42,21 +44,22 @@ const Ul = styled.ul`
       transition: width 0.3s;
     }
 
-    li:hover::after {
+    .NavComponents:hover::after {
       width: 10%;
     }
   }
 
-  li::after {
+  .NavComponents::after {
     content: "";
     display: block;
     width: 0;
     height: 4px;
     background: rgb(75, 108, 193);
     transition: width 0.3s;
+    border-radius: 20px;
   }
 
-  li:hover::after {
+  .NavComponents:hover::after {
     width: 100%;
   }
 `;
@@ -64,10 +67,12 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>About</li>
+      <Link to='/About' className='NavComponents'>About</Link>
+      <Link to='/Contact' className='NavComponents'>Contact</Link>
+      {/* <li>About</li>
       <li>Experience</li>
       <li>Projects</li>
-      <li>Contact</li>
+      <li>Contact</li> */}
     </Ul>
   );
 };

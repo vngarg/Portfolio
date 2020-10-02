@@ -1,14 +1,15 @@
 import React from 'react';
-import './App.css';
-import Hero from './components/HeroSection/Hero';
-import Navbar from './components/Nav/Navbar';
+import './App.css'
+import { BrowserRouter } from 'react-router-dom';
+import Routers from './Routes/Routes';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <Navbar />
-      <Hero />
+      <Routers />
     </div>
+    </BrowserRouter>
   );
 }
 
