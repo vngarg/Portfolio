@@ -31,6 +31,24 @@
     outline: none;
 }
 
+.ContactImage {
+    margin: 20px;
+    width: 40%;
+}
+
+.contact {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.contact a {
+    color: var(--color-blueShade);
+}
+
+.contact a:hover {
+    color: black;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .textArea {
         border-left: 1px solid rgb(230,234,237);

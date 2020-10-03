@@ -6,6 +6,7 @@
 - [ ] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
 - [ ] Instagram Logo.
+- [ ] Contact Page needs modification.
 - [ ] Add some more Online Platforms.
 - [ ] Add "How to run this project" section in README.
 - [ ] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
