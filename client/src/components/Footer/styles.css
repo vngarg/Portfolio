@@ -65,3 +65,15 @@ ul {
 .Insta {
     border-radius: 50%;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .name, .desc {
+        padding-left: 37px;
+    }
+    .contact {
+        padding-left: 37px;
+    }
+    .contact {
+        margin-bottom: 20px;
+    }
+}

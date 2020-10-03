@@ -12,9 +12,9 @@ import "./styles.css";
 
 const Footer = () => {
   return (
-    <div className="footer pt-5 pb-5">
+    <div className="footer">
       <Container>
-        <Row>
+        <Row className='pt-5 pb-3'>
           <Col lg={3}>
             <div className="name mb-3">S.G.</div>
             <div className="desc">
@@ -22,7 +22,7 @@ const Footer = () => {
               social worker who works towards providing education to all.
             </div>
             <br />
-            <div classname="contact">
+            <div className="contact">
               <a href="tel:8307747802">+91-8307747802</a>
               <br />
               <a href="emailto:sngargrsd@gmail.com">sngargrsd@gmail.com</a>
@@ -53,6 +53,7 @@ const Footer = () => {
                   href="https://www.codechef.com/users/s_g_01"
                   target="_blank"
                   alt="Codechef"
+                  rel="noopener noreferrer"
                 >
                   Codechef
                 </a>
@@ -62,6 +63,7 @@ const Footer = () => {
                   href="https://www.hackerrank.com/S_G_01"
                   target="_blank"
                   alt="HackerRank"
+                  rel="noopener noreferrer"
                 >
                   HackerRank
                 </a>
@@ -74,36 +76,41 @@ const Footer = () => {
               <li>
                 <a
                   href="https://www.linkedin.com/in/shlok-garg-0b216b191/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <img src={LinkedIn} alt="LinkedIn" className="SocialMedia" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/vngarg" target="_blank">
+                <a href="https://github.com/vngarg" target="_blank" rel="noopener noreferrer">
                   <img src={Github} alt="GitHub" className="SocialMedia" />
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/profile.php?id=100004778597873"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <img src={Facebook} alt="Facebook" className="SocialMedia" />
                 </a>
               </li>
               <li>
-                <a href="mailto:sngargrsd@gmail" target="_blank">
+                <a href="mailto:sngargrsd@gmail" target="_blank" rel="noopener noreferrer">
                   <img src={Gmail} alt="Gmail" className="SocialMedia" />
                 </a>
               </li>
               <li>
-                  <a href='https://www.instagram.com/sg_3105/' target='_blank'>
+                  <a href='https://www.instagram.com/sg_3105/' target='_blank' rel="noopener noreferrer">
                       <img src={Insta} alt='Instagram' className='SocialMedia Insta' />
                   </a>
               </li>
             </ul>
           </Col>
+        </Row>
+        <Row className='pb-2'>
+            <Col className='text-center'>
+            &#169; Shlok Garg
+            </Col> 
         </Row>
       </Container>
     </div>
