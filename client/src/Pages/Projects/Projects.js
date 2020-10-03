@@ -11,7 +11,7 @@ const Projects = () => {
         <div>
             <Menu />
             <Container>
-                <h1 className='mt-5'>My Projects</h1>
+                <h1 className='mt-5 mb-5'>My Projects</h1>
                 <Row>
                     <Col lg={4} sm={12}>
                         <ProjectCards />

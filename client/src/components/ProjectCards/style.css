@@ -1,0 +1,35 @@
+@import '../../Globals/Colors.css';
+
+.ProjectImage {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ProjectImage:hover {
+    opacity: 0.7;
+}
+
+.buttonGroup {
+    position: relative;
+    top: -100px;
+}
+
+.btn {
+    background-color: var(--color-blueShade);
+    color: white;
+    margin: 0 20px;
+    border-radius: 7px;
+}
+
+/* .card {
+    text-overflow: ellipsis;
+    padding: 4px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 7px;
+    position: relative;
+    top: -220px;
+    margin: 10px;
+} */
