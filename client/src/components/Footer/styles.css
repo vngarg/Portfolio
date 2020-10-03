@@ -40,3 +40,28 @@ a:hover {
     color: var(--color-blueShade);
     text-decoration: none;
 }
+
+.head {
+    font-size: 22px;
+    color: var(--color-textFaded);
+    padding-left: 37px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    line-height: 40px;
+}
+
+.SocialList {
+    display: flex;
+}
+
+.SocialMedia {
+    margin: 10px;
+    height: 28px;
+}
+
+.Insta {
+    border-radius: 50%;
+}
