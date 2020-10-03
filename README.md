@@ -10,3 +10,4 @@
 - [ ] Add "How to run this project" section in README.
 - [ ] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
 - [ ] Check all the info and the links once again before deploying.
+- [ ] Font fmaily of heading in Contact page.
