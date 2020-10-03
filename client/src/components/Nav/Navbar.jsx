@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
 
+import '../../Globals/Colors.css';
+
 const Nav = styled.nav`
   width: 100%;
   height: 130px;
@@ -23,7 +25,7 @@ const Nav = styled.nav`
     display: block;
     width: 25px;
     height: 7px;
-    background: rgb(75, 108, 193);
+    background: var(--color-blueShade);
     transition: width 0.3s;
     border-radius: 20px;
   }

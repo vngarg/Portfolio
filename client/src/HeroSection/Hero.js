@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Shlok from "../assets/images/Shlok.jpg";
 import HomePageProjects from '../components/HomePageProjects/HomePageProjects';
 import Collaboration from "../components/Collaboration/Collaboration.js";
+import Footer from '../components/Footer/Footer';
 
 class Hero extends Component {
   render() {
@@ -57,6 +58,7 @@ class Hero extends Component {
         <Skills />
         <HomePageProjects />
         <Collaboration />
+        <Footer />
       </Fragment>
     );
   }

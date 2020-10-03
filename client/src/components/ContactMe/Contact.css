@@ -1,7 +1,9 @@
+@import '../../Globals/Colors.css';
+
 .ContactForm {
     height: 160vh;
     /* width: 500px; */
-    background-color: rgb(25,26,29);
+    background-color: var(--color-backgroundBlack);
     color: white;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }

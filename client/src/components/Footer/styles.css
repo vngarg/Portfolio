@@ -1,0 +1,42 @@
+@import '../../Globals/Colors.css';
+
+.footer {
+    /* height: 200px; */
+    background-color: var(--color-backgroundBlack);
+    margin-top: 67px;
+    color: white;
+}
+
+.name {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.name::after {
+    content: '';
+    background-color: var(--color-blueShade);
+    display: block;
+    width: 25px;
+    height: 7px;
+    transition: width 0.3s;
+    border-radius: 20px;
+}
+
+.desc {
+    font-size: 0.94rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-blueShade);
+    text-decoration: none;
+}
