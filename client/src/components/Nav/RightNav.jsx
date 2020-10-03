@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
+import '../../Globals/Colors.css';
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -20,7 +22,7 @@ const Ul = styled.ul`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     flex-flow: column nowrap;
-    background-color: rgb(75, 108, 193);
+    background-color: var(--color-blueShade);
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -54,7 +56,7 @@ const Ul = styled.ul`
     display: block;
     width: 0;
     height: 4px;
-    background: rgb(75, 108, 193);
+    background: var(--color-blueShade);
     transition: width 0.3s;
     border-radius: 20px;
   }
@@ -68,6 +70,8 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <Link to='/About' className='NavComponents'>About</Link>
+      <Link to='/Experience' className='NavComponents'>Experience</Link>
+      <Link to='/Projects' className='NavComponents'>Projects</Link>
       <Link to='/Contact' className='NavComponents'>Contact</Link>
     </Ul>
   );

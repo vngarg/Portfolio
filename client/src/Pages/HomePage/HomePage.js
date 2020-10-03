@@ -1,14 +1,15 @@
 import React, { Component, Fragment } from "react";
 import { Row, Col, Button } from "reactstrap";
 import Particles from "react-particles-js";
-import Menu from "../components/Nav/Navbar.jsx";
+import Menu from "../../components/Nav/Navbar.jsx";
 
-import "./Hero.css";
-import Skills from "../components/Skills/Skills.js";
+import "./Home.css";
+import Skills from "../../components/Skills/Skills.js";
 import { Link } from "react-router-dom";
-import Shlok from "../assets/images/Shlok.jpg";
-import HomePageProjects from '../components/HomePageProjects/HomePageProjects';
-import Collaboration from "../components/Collaboration/Collaboration.js";
+import Shlok from '../../assets/images/Shlok.jpg';
+import HomePageProjects from '../../components/HomePageProjects/HomePageProjects';
+import Collaboration from "../../components/Collaboration/Collaboration.js";
+import Footer from '../../components/Footer/Footer';
 
 class Hero extends Component {
   render() {
@@ -57,6 +58,7 @@ class Hero extends Component {
         <Skills />
         <HomePageProjects />
         <Collaboration />
+        <Footer />
       </Fragment>
     );
   }
