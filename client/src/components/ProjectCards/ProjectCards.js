@@ -14,6 +14,11 @@ class ProjectCards extends Component {
 
     this.displayEle = this.displayEle.bind(this);
     this.hideEle = this.hideEle.bind(this);
+    this.preview = this.preview.bind(this);
+  }
+
+  preview = () => {
+    console.log('CLICKED');
   }
 
   displayEle = () => {
@@ -29,26 +34,35 @@ class ProjectCards extends Component {
   };
 
   render() {
+    var list = ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'JQuery', 'Reactjs', 'Nodejs'];
+
     var element = () => {
       if (this.state.hover) {
         return (
-          <div className="buttonGroup text-center">
-            <a
-              href="http://anugoonj-ipu.com/"
-              alt="Anugoonj"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="btn">Preview</Button>
-            </a>
-            <a
-              href="http://anugoonj-ipu.com/"
-              alt="Anugoonj"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="btn">Live Website</Button>
-            </a>
+          <div>
+            <div className='tags'>
+              {list.map((ele) => (
+                <div className='tag'>{ele}</div>
+              ))}
+            </div>
+            <div className="buttonGroup text-center">
+              <a
+                href="http://anugoonj-ipu.com/"
+                alt="Anugoonj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="btn" onClick={this.preview}>Preview</Button>
+              </a>
+              <a
+                href="http://anugoonj-ipu.com/"
+                alt="Anugoonj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="btn">Live Website</Button>
+              </a>
+            </div>
           </div>
         );
       } else {
