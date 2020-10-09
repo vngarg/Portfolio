@@ -1,7 +1,6 @@
 @import '../../Globals/Colors.css';
 
 .footer {
-    /* height: 200px; */
     background-color: var(--color-backgroundBlack);
     margin-top: 67px;
     color: white;
@@ -29,6 +28,14 @@
 
 .desc {
     font-size: 0.94rem;
+}
+
+.contact a {
+    color: white !important;
+}
+
+.contact a:hover {
+    color: var(--color-blueShade) !important;
 }
 
 a {
@@ -69,11 +76,5 @@ ul {
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .name, .desc {
         padding-left: 37px;
-    }
-    .contact {
-        padding-left: 37px;
-    }
-    .contact {
-        margin-bottom: 20px;
     }
 }
