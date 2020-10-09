@@ -4,16 +4,9 @@ import Burger from './Burger';
 
 import '../../Globals/Colors.css';
 
-const Nav = styled.nav`
-  width: 100%;
-  height: 130px;
-  padding: 25px 50px;
-  display: flex;
-  background-color: rgba(25, 26, 29, 1);
-  color: white;
-  font-size: 22px;
-  justify-content: space-between;
+// background-color: rgba(25, 26, 29, 1);
 
+const Nav = styled.nav`
   .logo {
     font-size: 37px;
     padding: 7px 22px;
@@ -44,9 +37,21 @@ const Nav = styled.nav`
   }
 `
 
-const Navbar = () => {
+const Navbar = ({ color }) => {
+
+  const nav = {
+    "width": "100%",
+  "height": "130px",
+  "padding": "25px 50px",
+  "display": "flex",
+  "background-color": `${color}`,
+  "color": "white",
+  "font-size": "22px",
+  "justify-content": "space-between",
+  }
+
   return (
-    <Nav>
+    <Nav style={nav}>
       <div className="logo">
         S.G.
       </div>

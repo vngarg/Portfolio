@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "reactstrap";
 
+// animations
+import Flip from 'react-reveal/Flip';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+// css
 import "./cards.css";
 
 const ExperienceCard = (props) => {
-
+    useEffect(() => {
+        Aos.init();
+    })
+    
     const certificate = () => {
         if(props.CredentialLink !== 'null') {
             return <a
@@ -22,9 +31,16 @@ const ExperienceCard = (props) => {
     <div>
       <Row className='row'>
         <Col xl={6} sm={12}>
-          <div className="position">{props.position}</div>
+          <div className="position">
+            <Flip cascade>
+            {props.position}
+            </Flip>
+            </div>
         </Col>
-        <Col xl={6} sm={12}>
+        <Col data-aos="fade-up"
+        data-aos-duration='500'
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" xl={6} sm={12}>
           <div className="CompanyName">
             <img src={props.Logo} alt="Gordian Technologies" className="Logo" />
             {props.CompanyName}

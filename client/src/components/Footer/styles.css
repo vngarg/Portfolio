@@ -77,4 +77,8 @@ ul {
     .name, .desc {
         padding-left: 37px;
     }
+    .contact {
+        padding-left: 37px;
+        padding-bottom: 20px;
+    }
 }

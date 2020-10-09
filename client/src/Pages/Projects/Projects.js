@@ -9,7 +9,7 @@ import ProjectCards from '../../components/ProjectCards/ProjectCards';
 const Projects = () => {
     return (
         <div>
-            <Menu />
+            <Menu color='rgba(25, 26, 29, 1)' />
             <Container>
                 <h1 className='mt-5 mb-5'>My Projects</h1>
                 <Row>

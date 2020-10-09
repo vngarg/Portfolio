@@ -16,7 +16,7 @@ class Hero extends Component {
     return (
       <Fragment>
         <div className="Hero">
-          <Menu />
+          <Menu color='transparent' />
           <Row className="mr-0 mt-5">
             <Col xl={6} sm={12} className='text-center ImageDiv'>
                 <img src={Shlok} alt="Shlok" className="HeroImage" />

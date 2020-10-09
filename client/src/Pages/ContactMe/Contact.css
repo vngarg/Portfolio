@@ -36,16 +36,17 @@
     width: 40%;
 }
 
-.contact {
+.contactDetails {
+    line-height: 28px;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 20px; 
 }
 
-.contact a {
+.contactDetails a {
     color: var(--color-blueShade);
 }
 
-.contact a:hover {
+.contactDetails a:hover {
     color: black;
 }
 
@@ -57,7 +58,7 @@
     .ContactImage {
         width: 90%;
     }
-    .contact {
+    .contactDetails {
         display: none;
     }
 }
