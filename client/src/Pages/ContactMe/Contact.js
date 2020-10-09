@@ -20,7 +20,7 @@ class Contact extends Component {
     return (
       <Fragment>
         <div className="ContactForm">
-          <Menu />
+          <Menu color='rgba(25, 26, 29, 1)' />
           <Container>
             <Row className="m-0 mt-5 mb-5">
               <Col lg={6} sm={12}>

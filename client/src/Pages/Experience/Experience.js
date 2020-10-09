@@ -92,7 +92,7 @@ const Experience = () => {
 
   return (
     <div>
-      <Menu />
+      <Menu color='rgba(25, 26, 29, 1)' />
       <Container>
           <ExperienceCard Logo={Gordian} position='MERN Stack developer' CompanyName='Gordian Technologies Pvt. Ltd.' desc={GordianDesc()} start='August 2020' end='present' duration='null' Location='Work from home' CredentialLink='null' websiteLink='https://orders.gordian.in' />
           <ExperienceCard Logo={SKCF} position='Web development Domain Head' CompanyName='SK Children Foundation' desc={SKDesc()} start='March 2020' end='present' duration='null' Location='Work from home' CredentialLink='https://drive.google.com/file/d/1CNBYPZ2PdZb6x5My4AvUN9BE4ii04dnK/view?usp=sharing' websiteLink='https://skchildrenfoundation.com/' />
