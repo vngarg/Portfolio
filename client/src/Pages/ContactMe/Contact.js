@@ -25,7 +25,7 @@ class Contact extends Component {
             <Row className="m-0 mt-5 mb-5">
               <Col lg={6} sm={12}>
                 <img src={Shlok} alt="Shlok" className="ContactImage" />
-                <div className="contact">
+                <div className="contactDetails">
                     Fill this form or directly contact me !!<br />
                   <a href="tel:8307747802">+91-8307747802</a>
                   <br />

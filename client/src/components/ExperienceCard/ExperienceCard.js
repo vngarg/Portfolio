@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "reactstrap";
-import Aos from 'aos';
 
+// animations
 import Flip from 'react-reveal/Flip';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+// css
 import "./cards.css";
 
 const ExperienceCard = (props) => {

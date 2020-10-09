@@ -20,7 +20,7 @@
     content: '';
     background-color: var(--color-blueShade);
     display: block;
-    width: 25px;
+    width: 55px;
     height: 7px;
     transition: width 0.7s;
     border-radius: 27px;
@@ -57,4 +57,14 @@
 
 .credential:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .position {
+        font-size: 1.4rem;
+        margin-bottom: 22px;
+    }
+    .CompanyName {
+        font-size: 1.2rem;
+    }
 }
