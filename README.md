@@ -5,6 +5,7 @@
 - [ ] Logos in Skills on About Page and color thme as a shade of blue matching with theme.
 - [ ] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
+- [ ] Make width of company name in experience same as the content.
 - [ ] Add technology section in experience.
 - [ ] Experience m check for the duration.
 - [ ] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
