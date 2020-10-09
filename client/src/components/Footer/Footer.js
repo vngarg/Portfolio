@@ -48,6 +48,16 @@ const Footer = () => {
           <Col lg={3}>
             <div className="head">Online Platforms</div>
             <ul>
+            <li>
+                <a
+                  href="https://auth.geeksforgeeks.org/user/shlokgarg/practice/"
+                  target="_blank"
+                  alt="Geeks for Geeks"
+                  rel="noopener noreferrer"
+                >
+                  Geeks for Geeks
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.codechef.com/users/s_g_01"

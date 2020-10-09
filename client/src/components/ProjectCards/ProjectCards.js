@@ -1,85 +1,71 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 import Anugoonj from "../../assets/images/Projects/Anugoonj.png";
-import { Button } from "reactstrap";
+import { Button, Modal, ModalBody } from "reactstrap";
 
-class ProjectCards extends Component {
-  constructor(props) {
-    super(props);
+const ProjectCards = () => {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
 
-    this.state = {
-      hover: false,
-    };
-
-    this.displayEle = this.displayEle.bind(this);
-    this.hideEle = this.hideEle.bind(this);
-    this.preview = this.preview.bind(this);
-  }
-
-  preview = () => {
-    console.log('CLICKED');
-  }
-
-  displayEle = () => {
-    this.setState({
-      hover: true,
-    });
+  const previewWebsite = () => {
+    toggle();
   };
 
-  hideEle = () => {
-    this.setState({
-      hover: false,
-    });
-  };
+  var list = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Bootstrap",
+    "JQuery",
+    "Reactjs",
+    "Nodejs",
+  ];
 
-  render() {
-    var list = ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'JQuery', 'Reactjs', 'Nodejs'];
-
-    var element = () => {
-      if (this.state.hover) {
-        return (
-          <div>
-            <div className='tags'>
-              {list.map((ele) => (
-                <div className='tag'>{ele}</div>
-              ))}
-            </div>
-            <div className="buttonGroup text-center">
-              <a
-                href="http://anugoonj-ipu.com/"
-                alt="Anugoonj"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="btn" onClick={this.preview}>Preview</Button>
-              </a>
-              <a
-                href="http://anugoonj-ipu.com/"
-                alt="Anugoonj"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="btn">Live Website</Button>
-              </a>
-            </div>
+  var element = () => {
+    if (this.state.hover) {
+      return (
+        <div>
+          <div className="tags">
+            {list.map((ele) => (
+              <div className="tag">{ele}</div>
+            ))}
           </div>
-        );
-      } else {
-        return null;
-      }
-    };
+          <div className="buttonGroup text-center">
+            <a
+              href="http://anugoonj-ipu.com/"
+              alt="Anugoonj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="btn">Preview</Button>
+            </a>
+            <a
+              href="http://anugoonj-ipu.com/"
+              alt="Anugoonj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="btn">Live Website</Button>
+            </a>
+          </div>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  };
 
-    return (
-      <div onMouseOver={this.displayEle} onMouseOut={this.hideEle}>
-        <img src={Anugoonj} alt="Anugoonj'20" className="ProjectImage" />
-        {element()}
-        {/* <div className='card'>
-                    {List}
-                </div> */}
-      </div>
-    );
-  }
-}
+  return (
+    <div onClick={previewWebsite}>
+      <img src={Anugoonj} className="ProjectImage" alt="Anugoonj" />
+      <Modal isOpen={modal} toggle={toggle} style={{ 'width': '100%' , 'backgroundColor': 'transparent' }}>
+        <ModalBody>
+          <iframe src='http://anugoonj-ipu.com/' className='frame' />
+        </ModalBody>
+      </Modal>
+    </div>
+  );
+};
 
 export default ProjectCards;
