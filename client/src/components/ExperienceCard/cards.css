@@ -1,3 +1,9 @@
+@import '../../Globals/Colors.css';
+
+.row {
+    padding: 37px 0px;
+}
+
 .position {
     font-size: 1.6rem;
 }
@@ -18,4 +24,33 @@
     height: 7px;
     transition: width 0.7s;
     border-radius: 27px;
+}
+
+.Logo {
+    vertical-align: middle;
+    padding-top: 0 !important;
+    padding-bottom: 10px;
+    width: 37px;
+    margin-right: 16px;
+}
+
+.CompanyName {
+    vertical-align: middle;
+    font-size: 1.3rem;   
+}
+
+.duration {
+    color: var(--color-textFaded);
+    font-size: 0.9rem;
+}
+
+.location {
+    color: var(--color-textFaded);
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+}
+
+.credential {
+    color: var(--color-blueShade);
+    font-weight: bold;
 }
