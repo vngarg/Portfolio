@@ -45,7 +45,7 @@ class Hero extends Component {
             params={{
               particles: {
                 number: {
-                  value: 200,
+                  value: 130,
                   density: {
                     enable: true,
                     value_area: 1000,

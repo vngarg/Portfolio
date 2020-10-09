@@ -4,8 +4,6 @@ import Burger from './Burger';
 
 import '../../Globals/Colors.css';
 
-// background-color: rgba(25, 26, 29, 1);
-
 const Nav = styled.nav`
   .logo {
     font-size: 37px;
@@ -40,15 +38,15 @@ const Nav = styled.nav`
 const Navbar = ({ color }) => {
 
   const nav = {
-    "width": "100%",
-  "height": "130px",
-  "padding": "25px 50px",
-  "display": "flex",
-  "background-color": `${color}`,
-  "color": "white",
-  "font-size": "22px",
-  "justify-content": "space-between",
-  }
+      "width": "100%",
+      "height": "130px",
+      "padding": "25px 50px",
+      "display": "flex",
+      "backgroundColor": `${color}`,
+      "color": "white",
+      "fontSize": "22px",
+      "justifyContent": "space-between",
+      }
 
   return (
     <Nav style={nav}>
