@@ -1,0 +1,21 @@
+.position {
+    font-size: 1.6rem;
+}
+
+.position:hover {
+    cursor: pointer;
+}
+
+.position:hover::after {
+    width: 25%;
+}
+
+.position::after {
+    content: '';
+    background-color: var(--color-blueShade);
+    display: block;
+    width: 25px;
+    height: 7px;
+    transition: width 0.7s;
+    border-radius: 27px;
+}
