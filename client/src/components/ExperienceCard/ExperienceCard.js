@@ -4,6 +4,20 @@ import { Row, Col } from "reactstrap";
 import "./cards.css";
 
 const ExperienceCard = (props) => {
+
+    const certificate = () => {
+        if(props.CredentialLink !== 'null') {
+            return <a
+            href={props.CredentialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="credential"
+          >
+            See the Certificate
+          </a>
+        }
+    }
+
   return (
     <div>
       <Row className='row'>
@@ -20,15 +34,8 @@ const ExperienceCard = (props) => {
           </div>
           <div className="location">{props.Location}</div>
           <div className="Workdescription">{props.desc}</div>
-
-          <a
-            href={props.CredentialLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="credential"
-          >
-            Certificate
-          </a>
+          <a href={props.WebisteLink} className='credential' target="_blank" rel="noopener noreferrer">See the Work</a><br />
+          {certificate()}
         </Col>
       </Row>
       <hr />

@@ -54,3 +54,7 @@
     color: var(--color-blueShade);
     font-weight: bold;
 }
+
+.credential:hover {
+    cursor: pointer;
+}
