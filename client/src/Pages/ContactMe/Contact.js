@@ -30,9 +30,9 @@ class Contact extends Component {
 
   change = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
+    
     this.setState({
-      [e.target.name]: e.target.name,  
+      [e.target.name]: e.target.value,  
     })
   }
 
