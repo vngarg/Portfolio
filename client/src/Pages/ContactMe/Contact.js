@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Menu from "../../components/Nav/Navbar";
 import Footer from "../../components/Footer/Footer";
+import axios from 'axios';
+import Variables from '../../Globals/Variables';
 
 import "./Contact.css";
 import {
@@ -12,11 +14,77 @@ import {
   InputGroupText,
   Input,
   Button,
+  Alert
 } from "reactstrap";
 import Shlok from "../../assets/images/Shlok.jpg";
 
+const BaseUrl = Variables.baseUrl;
+
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      subject: '',
+
+      AlertVisible: false
+    }
+
+    this.change = this.change.bind(this);
+    this.submit = this.submit.bind(this);
+  }
+
+  submit = (e) => {
+    e.preventDefault();
+
+    const payLoad = {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message,
+    }
+    
+    axios({
+      url: `${BaseUrl}/Response`,
+      method: "POST",
+      data: payLoad,
+    }).then(() => {
+      console.log('Data had been recorded successfully');
+      this.setState({
+        AlertVisible: true,
+        name: '',
+        email: '',
+        message: '',
+        subject: '',
+      })
+    }).catch(error => {
+      console.log('Error on Client side, ', error);
+    })
+  }
+
+  change = (e) => {
+    e.preventDefault();
+    
+    this.setState({
+      [e.target.name]: e.target.value,  
+    })
+  }
+
   render() {
+
+    const FormConfirm = () => {
+      if(this.state.AlertVisible)
+        return (
+          <Alert color="success">
+            Thank you for contacting me 😀 I had received your message.
+          </Alert>
+        )
+    else 
+      return null;
+    }
+
     return (
       <Fragment>
         <div className="ContactForm">
@@ -38,26 +106,45 @@ class Contact extends Component {
                   <br />
                   Let me know !!
                 </div>
-                <form>
+                <form onSubmit={e => this.submit(e)}>
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Name</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="text" placeholder="Name" />
+                    <Input 
+                    type="text" 
+                    placeholder="Name"
+                    name='name'
+                    value={this.state.name}
+                    onChange={e => this.change(e)}
+                    />
                   </InputGroup>
                   <br />
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Email Id</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="email" placeholder="Email" required />
+                    <Input 
+                    type="email" 
+                    placeholder="Email" 
+                    name='email'
+                    value={this.state.email}
+                    onChange={e => this.change(e)}
+                    required 
+                    />
                   </InputGroup>
                   <br />
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Messgae Subject</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="text" placeholder="Subject" />
+                    <Input 
+                    type="text" 
+                    placeholder="Subject"
+                    name='subject'
+                    value={this.state.subject} 
+                    onChange={e => this.change(e)}
+                    />
                   </InputGroup>
                   <br />
                   <label>Message</label>
@@ -67,8 +154,12 @@ class Contact extends Component {
                     cols="70"
                     placeholder="Give your message"
                     className="textArea"
+                    name='message'
+                    value={this.state.message}
+                    onChange={e => this.change(e)}
                   />
                   <br />
+                  {FormConfirm()}
                   <center>
                     <Button className="SubmitBtn" color="primary">
                       Submit
