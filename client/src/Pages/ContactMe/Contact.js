@@ -16,6 +16,26 @@ import {
 import Shlok from "../../assets/images/Shlok.jpg";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      subject: ''
+    }
+
+    this.change = this.change.bind(this);
+  }
+
+  change = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+    this.setState({
+      [e.target.name]: e.target.name,  
+    })
+  }
+
   render() {
     return (
       <Fragment>
@@ -43,21 +63,40 @@ class Contact extends Component {
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Name</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="text" placeholder="Name" />
+                    <Input 
+                    type="text" 
+                    placeholder="Name"
+                    name='name'
+                    value={this.state.name}
+                    onChange={e => this.change(e)}
+                    />
                   </InputGroup>
                   <br />
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Email Id</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="email" placeholder="Email" required />
+                    <Input 
+                    type="email" 
+                    placeholder="Email" 
+                    name='email'
+                    valid={this.state.email}
+                    onChange={e => this.change(e)}
+                    required 
+                    />
                   </InputGroup>
                   <br />
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Messgae Subject</InputGroupText>
                     </InputGroupAddon>
-                    <Input type="text" placeholder="Subject" />
+                    <Input 
+                    type="text" 
+                    placeholder="Subject"
+                    name='subject'
+                    valid={this.state.subject} 
+                    onChange={e => this.change(e)}
+                    />
                   </InputGroup>
                   <br />
                   <label>Message</label>
@@ -67,6 +106,9 @@ class Contact extends Component {
                     cols="70"
                     placeholder="Give your message"
                     className="textArea"
+                    name='message'
+                    value={this.state.message}
+                    onChange={e => this.change(e)}
                   />
                   <br />
                   <center>
