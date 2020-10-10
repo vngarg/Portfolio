@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 require("dotenv").config();
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT;
@@ -42,8 +43,29 @@ app.post("/Response", (req, res) => {
             console.log('Error in Server Side');
         } else {
             console.log('Data has been recorded sucessfully');
-            res.json({
-                msg: 'Your response has been recorded',
+            
+            // sending mail to myself
+            var transporter = nodemailer.createTransport({
+                service: "gmail",
+                auth: {
+                    user: process.env.EMAIL,
+                    pass: process.env.EMAIL_PASSWORD,
+                }
+            });
+            
+            var mailOptions = {
+                from: data.email,
+                to: 'sngargrsd@gmail.com',
+                subject: `Contact Form on your Portfolio - ${data.subject}`, 
+                text: data.message,
+            }
+
+            transporter.sendMail(mailOptions, function(error, info) {
+                if(error) {
+                    console.log('Error in sending mail, ', error);
+                } else {
+                    console.log("Email sent, ", info);
+                }
             })
         }
     })
