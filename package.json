@@ -2,12 +2,12 @@
   "name": "Portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently -n 'Server,Client' -c 'red,green' \"nodemon index.js\" \"npm run client\""
+    "dev": "concurrently -n 'Server,Client' -c 'red,green' \"nodemon server.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",

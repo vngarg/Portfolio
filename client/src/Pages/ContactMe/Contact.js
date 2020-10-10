@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Menu from "../../components/Nav/Navbar";
 import Footer from "../../components/Footer/Footer";
+import axios from 'axios';
+import Variables from '../../Globals/Variables';
 
 import "./Contact.css";
 import {
@@ -15,6 +17,8 @@ import {
 } from "reactstrap";
 import Shlok from "../../assets/images/Shlok.jpg";
 
+const BaseUrl = Variables.baseUrl;
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +30,28 @@ class Contact extends Component {
     }
 
     this.change = this.change.bind(this);
+    this.submit = this.submit.bind(this);
+  }
+
+  submit = (e) => {
+    e.preventDefault();
+
+    const payLoad = {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message,
+    }
+    
+    axios({
+      url: `${BaseUrl}/Response`,
+      method: "POST",
+      data: payLoad,
+    }).then(() => {
+      console.log('Data had been recorded successfully');
+    }).catch(error => {
+      console.log('Error on Client side, ', error);
+    })
   }
 
   change = (e) => {
@@ -58,7 +84,7 @@ class Contact extends Component {
                   <br />
                   Let me know !!
                 </div>
-                <form>
+                <form onSubmit={e => this.submit(e)}>
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>Name</InputGroupText>
@@ -80,7 +106,7 @@ class Contact extends Component {
                     type="email" 
                     placeholder="Email" 
                     name='email'
-                    valid={this.state.email}
+                    value={this.state.email}
                     onChange={e => this.change(e)}
                     required 
                     />
@@ -94,7 +120,7 @@ class Contact extends Component {
                     type="text" 
                     placeholder="Subject"
                     name='subject'
-                    valid={this.state.subject} 
+                    value={this.state.subject} 
                     onChange={e => this.change(e)}
                     />
                   </InputGroup>
