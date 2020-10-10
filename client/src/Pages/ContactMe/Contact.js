@@ -14,6 +14,7 @@ import {
   InputGroupText,
   Input,
   Button,
+  Alert
 } from "reactstrap";
 import Shlok from "../../assets/images/Shlok.jpg";
 
@@ -26,7 +27,9 @@ class Contact extends Component {
       name: '',
       email: '',
       message: '',
-      subject: ''
+      subject: '',
+
+      AlertVisible: false
     }
 
     this.change = this.change.bind(this);
@@ -49,6 +52,13 @@ class Contact extends Component {
       data: payLoad,
     }).then(() => {
       console.log('Data had been recorded successfully');
+      this.setState({
+        AlertVisible: true,
+        name: '',
+        email: '',
+        message: '',
+        subject: '',
+      })
     }).catch(error => {
       console.log('Error on Client side, ', error);
     })
@@ -63,6 +73,18 @@ class Contact extends Component {
   }
 
   render() {
+
+    const FormConfirm = () => {
+      if(this.state.AlertVisible)
+        return (
+          <Alert color="success">
+            Thank you for contacting me 😀 I had received your message.
+          </Alert>
+        )
+    else 
+      return null;
+    }
+
     return (
       <Fragment>
         <div className="ContactForm">
@@ -137,6 +159,7 @@ class Contact extends Component {
                     onChange={e => this.change(e)}
                   />
                   <br />
+                  {FormConfirm()}
                   <center>
                     <Button className="SubmitBtn" color="primary">
                       Submit
