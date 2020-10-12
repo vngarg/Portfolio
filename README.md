@@ -7,6 +7,10 @@
 - [ ] Logos in Skills on About Page and color thme as a shade of blue matching with theme.
 - [ ] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
+- [ ] Last m Made with love wali line add krni h.
+- [ ] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
+- [ ] Add certifications on home page, upar wali website s example l sakte h.
+- [ ] Add more and more colourfull icons. 
 - [ ] Make width of company name in experience same as the content.
 - [ ] Add technology section in experience.
 - [ ] Experience m check for the duration.
