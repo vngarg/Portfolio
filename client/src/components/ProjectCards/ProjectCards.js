@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.css";
 
-import icon from '../../assets/Icons/TestLogo.png';
-
 import { Container, Row, Col, Button }  from 'reactstrap';
 
 const ProjectCards = (props) => {
