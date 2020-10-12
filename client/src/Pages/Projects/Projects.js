@@ -9,22 +9,31 @@ import ProjectCards from '../../components/ProjectCards/ProjectCards';
 import GithubIcon from '../../assets/Icons/GitHubFinder.png';
 import MovieFinderIcon from '../../assets/Icons/MovieFinder.ico';
 import NEWSIcon from '../../assets/Icons/NEWS.webp';
+import COVIDIcon from '../../assets/Icons/COVID.png';
+import AnugoonjIcon from '../../assets/Icons/Anugoonj.webp';
+import CodePlayerIcon from '../../assets/Icons/CodePlayer.png';
 
 import HTMLIcon from '../../assets/Icons/HTML.png';
 import CSSIcon from '../../assets/Icons/CSS.png'; 
 import ReactIcon from '../../assets/Icons/React.webp';
-import Javascript from '../../assets/Icons/JavaScript.svg';
+import JavascriptIcon from '../../assets/Icons/JavaScript.svg';
 import BootstrapIcon from '../../assets/Icons/Bootstrap.png';
 import FlutterIcon from '../../assets/Icons/Flutter.webp';
 import DartIcon from '../../assets/Icons/Dart.png';
 import AndroidIcon from '../../assets/Icons/Android.png';
 import APIicon from '../../assets/Icons/API.jpg'; 
+import JQueryIcon from '../../assets/Icons/JQuery.jpg';
+import NodeIcon from '../../assets/Icons/Nodejs.jpeg';
+import MongoIcon from '../../assets/Icons/Mongo.jpg';
 
 const Projects = () => {
 
-    var GithubFinder = [HTMLIcon, CSSIcon, Javascript, BootstrapIcon, ReactIcon];
+    var GithubFinder = [HTMLIcon, CSSIcon, JavascriptIcon, BootstrapIcon, ReactIcon];
     var MovieFinder = [FlutterIcon, DartIcon, AndroidIcon, APIicon];
-    var NEWSReader = [DartIcon, AndroidIcon, APIicon, FlutterIcon]
+    var NEWSReader = [DartIcon, AndroidIcon, APIicon, FlutterIcon];
+    var CoronaCheck = [DartIcon, APIicon, FlutterIcon, AndroidIcon];
+    var Anugoonj = [HTMLIcon, CSSIcon, JavascriptIcon, BootstrapIcon, NodeIcon, MongoIcon, JQueryIcon];
+    var CodePlayer = [HTMLIcon, CSSIcon, JavascriptIcon, JQueryIcon, BootstrapIcon];
 
     return (
         <div>
@@ -44,18 +53,18 @@ const Projects = () => {
                     <Col lg={6} sm={12}>
                         <ProjectCards projectName='Movie Reader' projectIcon={NEWSIcon} description='Here you can easily check the news updates. Also you can check news category wise. Updated many times a day.' emoji1='📰' projectLink='https://drive.google.com/file/d/1OKokk2hfRUfE7Rv_Rz69_cOAznUo48Wh/view' languages={NEWSReader} />
                     </Col>
-                    {/* <Col lg={6} sm={12}>
-                        <ProjectCards />
-                    </Col> */}
+                    <Col lg={6} sm={12}>
+                        <ProjectCards projectName='Corona Checker' projectIcon={COVIDIcon} description='Now easily check the corona updates on this app. Get Country Details.' emoji1='🏥' projectLink='https://drive.google.com/file/d/1uHog1UkgrJ30IngJ7XgXkebj9-RiC49b/view?usp=sharing' languages={CoronaCheck} />
+                    </Col>
                 </Row>
-                {/* <Row>
+                <Row>
                     <Col lg={6} sm={12}>
-                        <ProjectCards />
+                        <ProjectCards projectName="Anugoonj'20" projectIcon={AnugoonjIcon} description='Anugoonj, which translates to “Echoing of small efforts”, is the monumental annual cultural festival of GGSIPU which takes place in February. Captivating all creative thoroughbreds from more than 100 affiliated colleges' emoji1='🎡' projectLink='http://anugoonj-ipu.com/' languages={Anugoonj} />
                     </Col>
                     <Col lg={6} sm={12}>
-                        <ProjectCards />
+                        <ProjectCards projectName='CodePlayer' projectIcon={CodePlayerIcon} description='This is a CodePlayer where you can work with your code and can get the Output side by side. In this you can practice HTML ,CSS and JavaScript code and will get the output at the OutputWindow.' emoji1='🖥' projectLink='https://vngarg.github.io/CodePlayer/' languages={CodePlayer} />
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
             <Footer />
         </div>
