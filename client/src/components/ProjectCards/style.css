@@ -1,7 +1,7 @@
 @import '../../Globals/Colors.css';
 
 .icon {
-    width: 28px;
+    width: 40px;
 }
 
 .maincontainer {
@@ -27,4 +27,17 @@
 .btn {
     border-radius: 20px;
     margin: 19px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .icon {
+        width: 31px;
+    }
+    .projectName {
+        font-size: 22px;
+        padding-left: 7px;
+    }
+    .maincontainer {
+        margin: 7px;
+    }
 }

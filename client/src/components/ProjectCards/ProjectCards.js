@@ -28,24 +28,6 @@ const ProjectCards = (props) => {
         </Row>
         <Row className='row'>
           {languages}
-          {/* <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col>
-          <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col>
-          <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col>
-          <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col>
-          <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col>
-          <Col col={2}>
-            <img src={icon} className='icon' />
-          </Col> */}
         </Row>
         <a href={props.projectLink} target='_blank'>
         <Button color='primary' className='btn'>View Project</Button>
