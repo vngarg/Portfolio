@@ -64,7 +64,7 @@ app.post("/Response", (req, res) => {
                 if(error) {
                     console.log('Error in sending mail, ', error);
                 } else {
-                    console.log("Email sent, ", info);
+                    console.log("Email sent, ", info.response);
                 }
             })
         }
