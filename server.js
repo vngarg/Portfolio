@@ -57,14 +57,17 @@ app.post("/Response", (req, res) => {
                 from: data.email,
                 to: 'sngargrsd@gmail.com',
                 subject: `Contact Form on your Portfolio - ${data.subject}`, 
-                text: data.message,
+                text: `MESSAGE: ${data.message} SUBJECT: ${data.subject} EMAIL: ${data.email}`,
             }
 
             transporter.sendMail(mailOptions, function(error, info) {
                 if(error) {
                     console.log('Error in sending mail, ', error);
                 } else {
-                    console.log("Email sent, ", info);
+                    console.log("Email sent, ", info.response);
+                    res.json({
+                        'message': "Message received."
+                    })
                 }
             })
         }

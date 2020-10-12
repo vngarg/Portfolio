@@ -1,69 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
-import Anugoonj from "../../assets/images/Projects/Anugoonj.png";
-import { Button, Modal, ModalBody } from "reactstrap";
+import icon from '../../assets/Icons/TestLogo.png';
+
+import { Container, Row, Col, Button }  from 'reactstrap';
 
 const ProjectCards = () => {
-  const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
-
-  const previewWebsite = () => {
-    toggle();
-  };
-
-  var list = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Bootstrap",
-    "JQuery",
-    "Reactjs",
-    "Nodejs",
-  ];
-
-  var element = () => {
-    if (this.state.hover) {
-      return (
-        <div>
-          <div className="tags">
-            {list.map((ele) => (
-              <div className="tag">{ele}</div>
-            ))}
-          </div>
-          <div className="buttonGroup text-center">
-            <a
-              href="http://anugoonj-ipu.com/"
-              alt="Anugoonj"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="btn">Preview</Button>
-            </a>
-            <a
-              href="http://anugoonj-ipu.com/"
-              alt="Anugoonj"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="btn">Live Website</Button>
-            </a>
-          </div>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
 
   return (
-    <div onClick={previewWebsite}>
-      <img src={Anugoonj} className="ProjectImage" alt="Anugoonj" />
-      <Modal isOpen={modal} toggle={toggle} style={{ 'width': '100%' , 'backgroundColor': 'transparent' }}>
-        <ModalBody>
-          <iframe src='http://anugoonj-ipu.com/' className='frame' />
-        </ModalBody>
-      </Modal>
+    <div>
+      <Container className='maincontainer'>
+        <Row className='row'>
+          <Col>
+            <img src={icon} className='icon' />
+            <font className='projectName'>Project Name</font>
+          </Col>
+        </Row>
+        <Row className='row'>
+          <Col>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          </Col>
+        </Row>
+        <Row className='row'>
+          <Col className='tech'>
+            Technology used
+          </Col>
+        </Row>
+        <Row className='row'>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col>
+        </Row>
+        <Button className='btn'>View Project</Button>
+      </Container>
     </div>
   );
 };

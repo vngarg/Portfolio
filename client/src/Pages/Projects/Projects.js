@@ -13,15 +13,15 @@ const Projects = () => {
             <Container>
                 <h1 className='mt-5 mb-5'>My Projects</h1>
                 <Row>
-                    <Col lg={4} sm={12}>
+                    <Col lg={6} sm={12}>
+                        <ProjectCards />
+                    </Col>
+                    {/* <Col lg={4} sm={12}>
                         <ProjectCards />
                     </Col>
                     <Col lg={4} sm={12}>
                         <ProjectCards />
-                    </Col>
-                    <Col lg={4} sm={12}>
-                        <ProjectCards />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
             <Footer />
