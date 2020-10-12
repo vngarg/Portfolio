@@ -6,6 +6,13 @@ import icon from '../../assets/Icons/TestLogo.png';
 import { Container, Row, Col, Button }  from 'reactstrap';
 
 const ProjectCards = (props) => {
+  var languages = props.languages.map(logo => {
+    return (
+      <Col col={2}>
+        <img src={logo} className='icon' />
+      </Col>
+    )
+  })
 
   return (
     <div>
@@ -18,14 +25,12 @@ const ProjectCards = (props) => {
         </Row>
         <Row className='row'>
           <Col>
-            {props.emoji1}{' '}{props.description}
+          {props.emoji1}{' '}{props.description}
           </Col>
         </Row>
         <Row className='row'>
-          <Col col={2}>
-            <img src={props.Logo} className='icon' />
-          </Col>
-          <Col col={2}>
+          {languages}
+          {/* <Col col={2}>
             <img src={icon} className='icon' />
           </Col>
           <Col col={2}>
@@ -40,6 +45,9 @@ const ProjectCards = (props) => {
           <Col col={2}>
             <img src={icon} className='icon' />
           </Col>
+          <Col col={2}>
+            <img src={icon} className='icon' />
+          </Col> */}
         </Row>
         <a href={props.projectLink} target='_blank'>
         <Button color='primary' className='btn'>View Project</Button>

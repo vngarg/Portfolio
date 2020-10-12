@@ -6,10 +6,17 @@ import { Container, Row, Col } from 'reactstrap';
 import './Projects.css';
 import ProjectCards from '../../components/ProjectCards/ProjectCards';
 
-import TestIcon from '../../assets/Icons/TestLogo.png';
-import HTML from '../../assets/Icons/HTML.png';
+import HTMLIcon from '../../assets/Icons/HTML.png';
+import CSSIcon from '../../assets/Icons/CSS.png'; 
+import ReactIcon from '../../assets/Icons/React.webp';
+import Javascript from '../../assets/Icons/JavaScript.svg';
+import Github from '../../assets/Icons/GitHubFinder.png';
+import BootstrapIcon from '../../assets/Icons/Bootstrap.png';
 
 const Projects = () => {
+
+    var GithubFinder = [HTMLIcon, CSSIcon, Javascript, BootstrapIcon, ReactIcon];
+
     return (
         <div>
             <Menu color='rgba(25, 26, 29, 1)' />
@@ -17,7 +24,15 @@ const Projects = () => {
                 <h1 className='mt-5 mb-5'>My Projects</h1>
                 <Row>
                     <Col lg={6} sm={12}>
-                        <ProjectCards projectIcon={TestIcon} projectName='GitHub Finder' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." projectLink='https://githubfinder142.netlify.com/' emoji1='🔥' Logo={HTML} />
+                        <ProjectCards projectIcon={Github} projectName='GitHub Finder' description="This is a React application which can be used to search Github Accounts of various users. It will list out top 5 repositories of the user. It will also show the user details in the following sections." projectLink='https://githubfinder142.netlify.com/' emoji1='🔥' languages={GithubFinder} />
+                    </Col>
+                    {/* <Col lg={6} sm={12}>
+                        <ProjectCards />
+                    </Col> */}
+                </Row>
+                {/* <Row>
+                    <Col lg={6} sm={12}>
+                        <ProjectCards />
                     </Col>
                     <Col lg={6} sm={12}>
                         <ProjectCards />
@@ -30,15 +45,7 @@ const Projects = () => {
                     <Col lg={6} sm={12}>
                         <ProjectCards />
                     </Col>
-                </Row>
-                <Row>
-                    <Col lg={6} sm={12}>
-                        <ProjectCards />
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <ProjectCards />
-                    </Col>
-                </Row>
+                </Row> */}
             </Container>
             <Footer />
         </div>
