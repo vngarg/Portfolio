@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col, Button, Container } from "reactstrap";
 import Particles from "react-particles-js";
 import Menu from "../../components/Nav/Navbar.jsx";
 
@@ -10,6 +10,7 @@ import Shlok from '../../assets/images/Shlok.jpg';
 import HomePageProjects from '../../components/HomePageProjects/HomePageProjects';
 import Collaboration from "../../components/Collaboration/Collaboration.js";
 import Footer from '../../components/Footer/Footer';
+import Certification from "../../components/Certifications/Certification.js";
 
 class Hero extends Component {
   render() {
@@ -57,6 +58,24 @@ class Hero extends Component {
         </div>
         <Skills />
         <HomePageProjects />
+        <div className='certificateDiv'>
+          <Container>
+            <center>
+              <h1 style={{ 'marginBottom': '49px' }}>My Certifications</h1>
+            </center>
+            <Row>
+              <Col lg={4} sm={12}>
+                <Certification />
+              </Col>
+              <Col lg={4} sm={12}>
+                <Certification />
+              </Col>
+              <Col lg={4} sm={12}>
+                <Certification />
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <Collaboration />
         <Footer />
       </Fragment>

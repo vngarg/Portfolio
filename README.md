@@ -14,6 +14,7 @@
 - [ ] Add more and more colourfull icons. 
 - [ ] Make width of company name in experience same as the content.
 - [ ] Add technology section in experience.
+- [ ] Expereince page m alt tags of all images. Check alt tag of all images in the entire project. 
 - [ ] Experience m check for the duration.
 - [x] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
 - [x] Instagram Logo.
