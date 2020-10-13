@@ -12,6 +12,10 @@ import Collaboration from "../../components/Collaboration/Collaboration.js";
 import Footer from '../../components/Footer/Footer';
 import Certification from "../../components/Certifications/Certification.js";
 
+import JP from '../../assets/Logos/JPMorgan.png';
+import CN from '../../assets/Logos/COdingNinjas.jpg';
+import Coursera from '../../assets/Logos/Coursera.png';
+
 class Hero extends Component {
   render() {
     return (
@@ -64,14 +68,14 @@ class Hero extends Component {
               <h1 style={{ 'marginBottom': '49px' }}>My Certifications</h1>
             </center>
             <Row>
-              <Col lg={4} sm={12}>
-                <Certification />
+              <Col lg={4} sm={12} className='column'>
+                <Certification Name='JP Morgan Chase & Company' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." link='https://drive.google.com/file/d/1OP4ion8X-vJr8v6PRtCofdV9llf0bpeM/view?usp=sharing' logo={JP} />
               </Col>
-              <Col lg={4} sm={12}>
-                <Certification />
+              <Col lg={4} sm={12} className='column'>
+                <Certification Name='Front-End Web development with Reactjs' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." logo={Coursera} link='https://drive.google.com/file/d/1r9hrTzVtVaGohY8G6nodyNFw4BxkVXye/view?usp=sharing' />
               </Col>
-              <Col lg={4} sm={12}>
-                <Certification />
+              <Col lg={4} sm={12} className='column'>
+                <Certification Name='Competitive Programming using C++' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." logo={CN} link='http://files.codingninjas.in/certificate1053383eb2c0c6b86d503e254b0379295140e03.pdf' />
               </Col>
             </Row>
           </Container>
