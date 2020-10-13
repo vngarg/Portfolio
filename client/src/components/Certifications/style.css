@@ -1,4 +1,13 @@
+@import '../../Globals/Colors.css';
+
 .Certi {
-    border: 1px solid black;
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 28px var(--color-textFaded);
     border-radius: 10px;
+}
+
+.logo {
+    width: 100%;
+    padding: 28px;
+    margin-bottom: 16px;
 }
