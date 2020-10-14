@@ -62,7 +62,6 @@ const ExperienceCard = (props) => {
           >
             See the Work
           </a>
-          <br />
           {certificate()}
         </Col>
       </Row>

@@ -76,7 +76,7 @@ const Experience = () => {
         Developed the entire website for the organizatoin from scratch and implemented a cool UI.
         <ol>
           <li>Added some good animations to the website.</li>
-          <li>WOrked on more than 5 pages as well.</li>
+          <li>Worked on more than 5 pages as well.</li>
         </ol>
       </div>
     )
@@ -84,9 +84,9 @@ const Experience = () => {
 
   const GSSOCDesc = () => {
     return (
-      <div>
+      <p>
         GirlScript Summer of Code is a 3 month long internship where all the participants work on a specific alloted project. I participated in GSSoc'20 and worked on various projects. I had implemented some good features in 3 different projects.
-      </div>
+      </p>
     )
   }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Logo from "../../assets/Icons/TestLogo.png";
 
 import "./Skills.css";
 import FullStack from '../../assets/images/FullStack.png';

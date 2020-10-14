@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
+import { Link } from 'react-router-dom';
 
 import "../../Globals/Colors.css";
 
@@ -9,6 +10,18 @@ const Nav = styled.nav`
     font-size: 37px;
     padding: 7px 22px;
     font-weight: bold;
+  }
+
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: white;
+  }
+
+  .logo {
+    cursor: pointer;
   }
 
   .logo::after {
@@ -49,7 +62,11 @@ const Navbar = ({ color }) => {
 
   return (
     <Nav style={nav}>
-      <div className="logo">S.G.</div>
+      <div className="logo">
+        <Link to='/About' className='link'>
+          S.G.
+        </Link>
+      </div>
       <Burger />
     </Nav>
   );

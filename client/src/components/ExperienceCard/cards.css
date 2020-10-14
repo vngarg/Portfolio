@@ -50,9 +50,16 @@
     margin-bottom: 7px;
 }
 
-.credential {
+/* .credential {
     color: var(--color-blueShade);
     font-weight: bold;
+} */
+.credential {
+    background-color: var(--color-blueShade);
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 10px;
 }
 
 .credential:hover {
@@ -60,6 +67,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .credential {
+        font-size: 13px;
+    }
     .position {
         font-size: 1.4rem;
         margin-bottom: 22px;
