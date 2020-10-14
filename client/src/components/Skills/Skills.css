@@ -4,7 +4,7 @@
     position: relative;
     top: -280px;
     z-index: 10;
-    height: 300px;
+    height: 550px;
 }
 
 .SkillColumn {
@@ -14,15 +14,23 @@
     background-color: white;
 }
 
-.Logo {
-    width: 20%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.ImgLogo {
+    width: 85%;
+    margin: 20px;
+    vertical-align: middle;
+    /* padding-bottom: 20px; */
 }
 
 .col1 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.inDiv {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    align-items: center;
 }
 
 .col3 {
@@ -60,7 +68,13 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .mainDiv {
         top: -100px;
-        height: 229vh;
+        height: 313vh;
+    }
+    .ImgLogo {
+        height: auto !important;
+    }
+    .inDiv {
+        height: 250px;
     }
     .SkillColumn {
         margin: 7px 20px;

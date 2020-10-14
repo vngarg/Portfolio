@@ -3,6 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 import Logo from "../../assets/Icons/TestLogo.png";
 
 import "./Skills.css";
+import FullStack from '../../assets/images/FullStack.png';
+import Android from '../../assets/images/Android.jpg';
+import CP from '../../assets/images/CP.jpg';
 
 const Skills = () => {
   return (
@@ -10,7 +13,9 @@ const Skills = () => {
       <Container>
         <Row className="text-center">
           <Col lg={4} sm={12} className="SkillColumn col1">
-            <img src={Logo} alt="Web developer Logo" className="Logo" />
+          <div className='inDiv'>
+            <img src={FullStack} alt="Web developer Logo" className="ImgLogo" />
+            </div>
             <div className="heading">Full Stack Developer</div>
             <div className="description">
               I like to code things from scratch, and enjoy bringing ideas to
@@ -32,7 +37,9 @@ const Skills = () => {
             </div>
           </Col>
           <Col lg={4} sm={12} className="SkillColumn col2">
-            <img src={Logo} alt="Web developer Logo" className="Logo" />
+          <div className='inDiv'>
+            <img src={Android} style={{ 'height': '280px' }} alt="Web developer Logo" className="ImgLogo" />
+            </div>
             <div className="heading">Android Developer</div>
             <div className="description">
               I like to code things from scratch, and enjoy bringing ideas to
@@ -49,7 +56,9 @@ const Skills = () => {
             </div>
           </Col>
           <Col lg={4} sm={12} className="SkillColumn col3">
-            <img src={Logo} alt="Web developer Logo" className="Logo" />
+            <div className='inDiv'>
+            <img src={CP} alt="Web developer Logo" className="ImgLogo" />
+            </div>
             <div className="heading">Competetive Programmer</div>
             <div className="description">
               I like to code things from scratch, and enjoy bringing ideas to
