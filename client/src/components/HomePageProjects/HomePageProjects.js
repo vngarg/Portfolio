@@ -39,7 +39,7 @@ const HomePageProjects = () => {
             <ProjectCards
               projectIcon={GithubIcon}
               projectName="GitHub Finder"
-              description="This is a React application which can be used to search Github Accounts of various users. It will list out top 5 repositories of the user. It will also show the user details in the following sections."
+              description="This is a React application which can be used to search Github accounts of various users. It will list out top 5 repositories of the user and will also show the user details along with the number of followers in the following sections."
               projectLink="https://githubfinder142.netlify.com/"
               emoji1="🔥"
               languages={GithubFinder}
@@ -49,7 +49,7 @@ const HomePageProjects = () => {
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Movie Finder"
-              description="For all the movie lovers who find very difficult to search for a movie to watch. No you can easily get all the Latest and Top Movies, watch trailers and also see their cast and IMDB rating all at one place."
+              description="This application can give you the details of the latest movies. You can also watch their trailers and will also get their cast, IMDB rating along with various other details. It also shows the similar movies for your search."
               projectLink="https://drive.google.com/file/d/1--mQe_Lc0k2NIKHB9kOtd7XS5pfndWbg/view?usp=sharing"
               emoji1="🎉"
               languages={MovieFinder}

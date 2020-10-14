@@ -37,6 +37,7 @@
 .CompanyName {
     vertical-align: middle;
     font-size: 1.3rem;   
+    font-weight: bold;
 }
 
 .duration {
@@ -60,6 +61,10 @@
     padding: 7px;
     border-radius: 7px;
     margin: 10px;
+}
+
+.tech {
+    width: 40px;
 }
 
 .credential:hover {

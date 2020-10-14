@@ -26,7 +26,7 @@ import AndroidIcon from "../../assets/Icons/Android.png";
 import APIicon from "../../assets/Icons/API.jpg";
 import JQueryIcon from "../../assets/Icons/JQuery.jpg";
 import NodeIcon from "../../assets/Icons/Nodejs.jpeg";
-import MongoIcon from "../../assets/Icons/Mongo.jpg";
+import MongoIcon from "../../assets/Icons/Mongodb.jpeg";
 
 const Projects = () => {
   var GithubFinder = [
@@ -68,7 +68,7 @@ const Projects = () => {
             <ProjectCards
               projectIcon={GithubIcon}
               projectName="GitHub Finder"
-              description="This is a React application which can be used to search Github Accounts of various users. It will list out top 5 repositories of the user. It will also show the user details in the following sections."
+              description="This is a React application which can be used to search Github accounts of various users. It will list out top 5 repositories of the user and will also show the user details along with the number of followers in the following sections."
               projectLink="https://githubfinder142.netlify.com/"
               emoji1="🔥"
               languages={GithubFinder}
@@ -78,7 +78,7 @@ const Projects = () => {
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Movie Finder"
-              description="For all the movie lovers who find very difficult to search for a movie to watch. No you can easily get all the Latest and Top Movies, watch trailers and also see their cast and IMDB rating all at one place."
+              description="This application can give you the details of the latest movies. You can also watch their trailers and will also get their cast, IMDB rating along with various other details. It also shows the similar movies for your search."
               projectLink="https://drive.google.com/file/d/1--mQe_Lc0k2NIKHB9kOtd7XS5pfndWbg/view?usp=sharing"
               emoji1="🎉"
               languages={MovieFinder}
@@ -90,7 +90,7 @@ const Projects = () => {
             <ProjectCards
               projectName="Anugoonj'20"
               projectIcon={AnugoonjIcon}
-              description="Anugoonj, which translates to “Echoing of small efforts”, is the monumental annual cultural festival of GGSIPU which takes place in February. Captivating all creative thoroughbreds from more than 100 affiliated colleges"
+              description="Anugoonj is the annual Cultural Fest of GGSIPU. I had creted the website for the fest along with my team. The website is made using Javascript and HTML/CSS on front-end and Nodejs and Mongodb on back-end"
               emoji1="🎡"
               projectLink="http://anugoonj-ipu.com/"
               languages={Anugoonj}
@@ -100,7 +100,7 @@ const Projects = () => {
             <ProjectCards
               projectName="Corona Checker"
               projectIcon={COVIDIcon}
-              description="Now easily check the corona updates on this app. Get Country Details."
+              description="This android application allows you to check the COVID-19 status of India, number of total and active patients along with the ones who didn't survived this disease. It also provide the details of various other countries. Some precautions and symptoms are listed as well."
               emoji1="🏥"
               projectLink="https://drive.google.com/file/d/1uHog1UkgrJ30IngJ7XgXkebj9-RiC49b/view?usp=sharing"
               languages={CoronaCheck}
@@ -112,7 +112,7 @@ const Projects = () => {
             <ProjectCards
               projectName="NEWS Reader"
               projectIcon={NEWSIcon}
-              description="Here you can easily check the news updates. Also you can check news category wise. Updated many times a day."
+              description="Now easily chech the latest NEWS using this android application. You can read the NEWS category wise as well. Install the app and get updated with the NEWS."
               emoji1="📰"
               projectLink="https://drive.google.com/file/d/1OKokk2hfRUfE7Rv_Rz69_cOAznUo48Wh/view"
               languages={NEWSReader}
@@ -122,7 +122,7 @@ const Projects = () => {
             <ProjectCards
               projectName="IT Logger"
               projectIcon={LogsIcon}
-              description="Store your records easily using this IT Logger. You can easiy delete, modify and create a new record."
+              description="This React application allows you to store your records in an optimized way. You can modify or delete them anytime you feel."
               emoji1="🧾"
               projectLink="https://github.com/vngarg/IT-Logger"
               languages={ITLogger}
@@ -134,7 +134,7 @@ const Projects = () => {
             <ProjectCards
               projectName="CodePlayer"
               projectIcon={CodePlayerIcon}
-              description="This is a CodePlayer where you can work with your code and can get the Output side by side. In this you can practice HTML ,CSS and JavaScript code and will get the output at the OutputWindow."
+              description="This is a Codeplayer where you can work with your code and can get the Output side by side. In this you can practice HTML ,CSS and JavaScript code and will get the output at the OutputWindow."
               emoji1="🖥"
               projectLink="https://vngarg.github.io/CodePlayer/"
               languages={CodePlayer}
@@ -144,7 +144,7 @@ const Projects = () => {
             <ProjectCards
               projectName="Breakout Game"
               projectIcon={Game}
-              description="We all have played this game in our childhood. So this is my version of the game. Although this is very simple, still it required full attenetion. So go and play the game."
+              description="This is a simple Javascript game which is built majorliy using Canvas. This is the game which we all loved to play during our childhood days but have forgotten now. Let's see who reaches the highest level."
               emoji1="🎮"
               projectLink="https://vngarg.github.io/BrekOut-Game/"
               languages={JavascriptGame}
