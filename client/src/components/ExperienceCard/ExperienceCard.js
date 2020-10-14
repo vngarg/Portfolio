@@ -58,7 +58,7 @@ const ExperienceCard = (props) => {
             {props.CompanyName}
           </div>
           <div className="duration">
-            {props.start} - {props.end},
+            {props.start} - {props.end}
           </div>
           <div className="location">{props.Location}</div>
           <div className="Workdescription">{props.desc}</div>

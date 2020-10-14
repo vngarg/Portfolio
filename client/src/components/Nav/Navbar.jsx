@@ -49,16 +49,39 @@ const Nav = styled.nav`
 `;
 
 const Navbar = ({ color }) => {
-  const nav = {
+  var nav;
+
+  React.useEffect(() => {
+    function handleResize() {
+
+    }
+
+    window.addEventListener('resize', handleResize);
+  });
+
+  if(window.innerWidth > 320 && window.innerWidth < 480) {
+    nav = {
     width: "100%",
-    height: "130px",
-    padding: "25px 50px",
+    height: "70px",
+    padding: "7px 20px",
     display: "flex",
     backgroundColor: `${color}`,
     color: "white",
     fontSize: "22px",
     justifyContent: "space-between",
-  };
+    }
+  } else {
+    nav = {
+      width: "100%",
+      height: "130px",
+      padding: "25px 50px",
+      display: "flex",
+      backgroundColor: `${color}`,
+      color: "white",
+      fontSize: "22px",
+      justifyContent: "space-between",
+    }
+  }
 
   return (
     <Nav style={nav}>

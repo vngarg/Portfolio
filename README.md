@@ -11,16 +11,15 @@
 - [x] Last m Made with love wali line add krni h.
 - [x] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
 - [x] Add certifications on home page, upar wali website s example l sakte h.
-- [ ] Add more and more colourfull icons. 
+- [x] Add more and more colourfull icons. 
 - [x] Make width of company name in experience same as the content.
 - [x] Add technology section in experience.
 - [x] Expereince page m alt tags of all images. Check alt tag of all images in the entire project. 
-- [ ] Experience m check for the duration.
 - [x] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
 - [x] Instagram Logo.
 - [x] Correctly set the Contact and Email in footer on desktop view.
-- [ ] Homepage p more projects p click karne s I'm directed at the end of the projects page but should be directed to the top.
-- [ ] Website Preloader
+<!-- - [ ] Homepage p more projects p click karne s I'm directed at the end of the projects page but should be directed to the top.
+- [ ] Website Preloader -->
 - [ ] Contact Page needs modification.
 - [x] Add some more Online Platforms.
 - [ ] Add "How to run this project" section in README.

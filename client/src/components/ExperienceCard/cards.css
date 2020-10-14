@@ -40,11 +40,6 @@
     font-weight: bold;
 }
 
-.duration {
-    color: var(--color-textFaded);
-    font-size: 0.9rem;
-}
-
 .location {
     color: var(--color-textFaded);
     font-size: 0.9rem;
