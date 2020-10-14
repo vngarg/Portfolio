@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Burger from './Burger';
+import React from "react";
+import styled from "styled-components";
+import Burger from "./Burger";
 
-import '../../Globals/Colors.css';
+import "../../Globals/Colors.css";
 
 const Nav = styled.nav`
   .logo {
@@ -33,29 +33,26 @@ const Nav = styled.nav`
       font-size: 22px;
     }
   }
-`
+`;
 
 const Navbar = ({ color }) => {
-
   const nav = {
-      "width": "100%",
-      "height": "130px",
-      "padding": "25px 50px",
-      "display": "flex",
-      "backgroundColor": `${color}`,
-      "color": "white",
-      "fontSize": "22px",
-      "justifyContent": "space-between",
-      }
+    width: "100%",
+    height: "130px",
+    padding: "25px 50px",
+    display: "flex",
+    backgroundColor: `${color}`,
+    color: "white",
+    fontSize: "22px",
+    justifyContent: "space-between",
+  };
 
   return (
     <Nav style={nav}>
-      <div className="logo">
-        S.G.
-      </div>
+      <div className="logo">S.G.</div>
       <Burger />
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

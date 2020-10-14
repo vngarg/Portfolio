@@ -17,7 +17,7 @@ const ProjectCards = (props) => {
       <Container className='maincontainer'>
         <Row className='row'>
           <Col>
-            <img src={props.projectIcon} className='icon' alt='Project Logo' />
+            <img src={props.projectIcon} className='Mainicon' alt='Project Logo' />
             <font className='projectName'>{props.projectName}</font>
           </Col>
         </Row>

@@ -6,7 +6,7 @@ import "./style.css";
 const Certification = (props) => {
   return (
     <div className="Certi text-center">
-      <img src={props.logo} alt="Company Logo" className="logo" />
+      <img src={props.logo} alt="Company Logo" className="Certilogo" />
       <h4 className="m-3 Cname">{props.Name}</h4>
       <p className="mr-4 ml-4">{props.description}</p>
       <a href={props.link} target="_blank" rel="noopener noreferrer">

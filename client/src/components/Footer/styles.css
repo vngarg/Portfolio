@@ -1,5 +1,9 @@
 @import '../../Globals/Colors.css';
 
+body {
+    font-family: Rubik, Arial, sans-serif;
+}
+
 .footer {
     background-color: var(--color-backgroundBlack);
     margin-top: 67px;

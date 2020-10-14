@@ -1,9 +1,9 @@
 ## Todo
-- [ ] Animation in button on homepage has to be upgraded a bit. 
+- [x] Animation in button on homepage has to be upgraded a bit. 
 - [x] Background of navbar to be transparent
-- [ ] Change Background color of modal in projects.
+- [x] Change Background color of modal in projects.
 - [ ] Height and font-size of navbar.
-- [ ] Font in not attractive, do this. 
+- [x] Font in not attractive, do this. 
 - [ ] Logos in Skills on About Page and color thme as a shade of blue matching with theme.
 - [ ] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
