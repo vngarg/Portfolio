@@ -74,4 +74,9 @@ app.post("/Response", (req, res) => {
     })
 });
 
+// For deployment to Heroku
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
 app.listen(PORT, console.log(`Server is started at port ${PORT}`));
