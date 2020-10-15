@@ -1,14 +1,27 @@
-import React from 'react';
-import styled from 'styled-components';
-import Burger from './Burger';
+import React from "react";
+import styled from "styled-components";
+import Burger from "./Burger";
+import { Link } from 'react-router-dom';
 
-import '../../Globals/Colors.css';
+import "../../Globals/Colors.css";
 
 const Nav = styled.nav`
   .logo {
     font-size: 37px;
     padding: 7px 22px;
     font-weight: bold;
+  }
+
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: white;
+  }
+
+  .logo {
+    cursor: pointer;
   }
 
   .logo::after {
@@ -33,29 +46,45 @@ const Nav = styled.nav`
       font-size: 22px;
     }
   }
-`
+`;
 
 const Navbar = ({ color }) => {
+  var nav;
 
-  const nav = {
-      "width": "100%",
-      "height": "130px",
-      "padding": "25px 50px",
-      "display": "flex",
-      "backgroundColor": `${color}`,
-      "color": "white",
-      "fontSize": "22px",
-      "justifyContent": "space-between",
-      }
+  if(window.innerWidth > 320 && window.innerWidth < 480) {
+    nav = {
+    width: "100%",
+    height: "70px",
+    padding: "7px 20px",
+    display: "flex",
+    backgroundColor: `${color}`,
+    color: "white",
+    fontSize: "22px",
+    justifyContent: "space-between",
+    }
+  } else {
+    nav = {
+      width: "100%",
+      height: "130px",
+      padding: "25px 50px",
+      display: "flex",
+      backgroundColor: `${color}`,
+      color: "white",
+      fontSize: "22px",
+      justifyContent: "space-between",
+    }
+  }
 
   return (
     <Nav style={nav}>
       <div className="logo">
-        S.G.
+        <Link to='/About' className='link'>
+          S.G.
+        </Link>
       </div>
       <Burger />
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

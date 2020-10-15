@@ -26,6 +26,10 @@
     border-radius: 27px;
 }
 
+a:hover {
+    color: white;
+}
+
 .Logo {
     vertical-align: middle;
     padding-top: 0 !important;
@@ -37,11 +41,7 @@
 .CompanyName {
     vertical-align: middle;
     font-size: 1.3rem;   
-}
-
-.duration {
-    color: var(--color-textFaded);
-    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .location {
@@ -51,8 +51,15 @@
 }
 
 .credential {
-    color: var(--color-blueShade);
-    font-weight: bold;
+    background-color: var(--color-blueShade);
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.tech {
+    width: 40px;
 }
 
 .credential:hover {
@@ -60,6 +67,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .credential {
+        font-size: 13px;
+    }
     .position {
         font-size: 1.4rem;
         margin-bottom: 22px;

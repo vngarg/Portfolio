@@ -119,7 +119,7 @@ const Footer = () => {
         </Row>
         <Row className='pb-2'>
             <Col className='text-center'>
-            Copyright &#169; Shlok Garg
+            Made with ❤️ Shlok Garg
             </Col> 
         </Row>
       </Container>

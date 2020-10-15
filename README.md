@@ -1,27 +1,27 @@
 ## Todo
-- [ ] Animation in button on homepage has to be upgraded a bit. 
+- [x] Animation in button on homepage has to be upgraded a bit. 
 - [x] Background of navbar to be transparent
-- [ ] Change Background color of modal in projects.
-- [ ] Height and font-size of navbar.
-- [ ] Font in not attractive, do this. 
-- [ ] Logos in Skills on About Page and color thme as a shade of blue matching with theme.
-- [ ] ::after effect in navbar on mobile version. 
+- [x] Change Background color of modal in projects.
+- [x] Height and font-size of navbar.
+- [x] Font in not attractive, do this. 
+- [x] Logos in Skills on About Page and color theme as a shade of blue matching with theme.
+- [x] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
-- [ ] Description of all projects.
-- [ ] Last m Made with love wali line add krni h.
-- [ ] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
-- [ ] Add certifications on home page, upar wali website s example l sakte h.
-- [ ] Add more and more colourfull icons. 
-- [ ] Make width of company name in experience same as the content.
-- [ ] Add technology section in experience.
-- [ ] Experience m check for the duration.
-- [ ] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
+- [x] Description of all projects.
+- [x] Last m Made with love wali line add krni h.
+- [x] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
+- [x] Add certifications on home page, upar wali website s example l sakte h.
+- [x] Add more and more colourfull icons. 
+- [x] Make width of company name in experience same as the content.
+- [x] Add technology section in experience.
+- [x] Expereince page m alt tags of all images. Check alt tag of all images in the entire project. 
+- [x] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
 - [x] Instagram Logo.
-- [ ] Correctly set the Contact and Email in footer on desktop view.
+- [x] Correctly set the Contact and Email in footer on desktop view.
 - [ ] Website Preloader
 - [ ] Contact Page needs modification.
-- [ ] Add some more Online Platforms.
+- [x] Add some more Online Platforms.
 - [ ] Add "How to run this project" section in README.
-- [ ] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
-- [ ] Check all the info and the links once again before deploying.
-- [ ] Font fmaily of heading in Contact page.
+- [x] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
+- [x] Check all the info and the links once again before deploying.
+- [x] Font fmaily of heading in Contact page.

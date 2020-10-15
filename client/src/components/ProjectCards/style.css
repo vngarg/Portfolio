@@ -1,5 +1,9 @@
 @import '../../Globals/Colors.css';
 
+.Mainicon {
+    width: 40px;
+}
+
 .icon {
     width: 40px;
 }
@@ -32,6 +36,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .icon {
         width: 31px;
+        margin: 5px;
     }
     .projectName {
         font-size: 22px;

@@ -14,6 +14,14 @@ const ExperienceCard = (props) => {
     Aos.init();
   });
 
+  var tech = props.Tech.map(logo => {
+    return (
+      <Col col={2}>
+        <img src={logo} className='tech' alt='Technology used' />
+      </Col>
+    )
+  })
+
   const certificate = () => {
     if (props.CredentialLink !== "null") {
       return (
@@ -50,19 +58,21 @@ const ExperienceCard = (props) => {
             {props.CompanyName}
           </div>
           <div className="duration">
-            {props.start} - {props.end},
+            {props.start} - {props.end}
           </div>
           <div className="location">{props.Location}</div>
           <div className="Workdescription">{props.desc}</div>
+          <Row className='mb-3'>
+            {tech}
+          </Row>
           <a
-            href={props.WebisteLink}
-            className="credential"
+            href={props.websiteLink}
             target="_blank"
             rel="noopener noreferrer"
+            className="credential"
           >
             See the Work
           </a>
-          <br />
           {certificate()}
         </Col>
       </Row>

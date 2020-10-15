@@ -62,7 +62,7 @@ const Ul = styled.ul`
   }
 
   .NavComponents:hover::after {
-    width: 100%;
+    width: 40%;
   }
 `;
 
