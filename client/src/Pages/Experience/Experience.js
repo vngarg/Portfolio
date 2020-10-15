@@ -35,7 +35,7 @@ const Experience = () => {
           <li>Added Login and Signup to the website.</li>
           <li>Integrated razorpay payment gateway.</li>
           <li>Added the customer form and messaging feature.</li>
-          <li>Developed an Admin panel wo accept and reject the orders.</li>
+          <li>Developed an Admin panel to accept and reject the orders.</li>
           <li>Integrated Google API's for Autocomplete and distance calculation.</li>
         </ol>
       </div>
@@ -63,7 +63,7 @@ const Experience = () => {
   const YuMedicDesc = () => {
     return (
       <div>
-        YuMedic is a company that promotes medical facilites in India and are working to bring the medical sector online, just a click away. I worked with them for a month and developed
+        YuMedic is a company that promotes medical facilites in India and is working to bring the medical sector online, just a click away. I worked with them for a month and developed
         <ol>
           <li>Various Pages of their website.</li>
           <li>Modified some previous pages as well.</li>
@@ -109,7 +109,7 @@ const Experience = () => {
   const GSSOCDesc = () => {
     return (
       <p>
-        GirlScript Summer of Code is a 3 month long internship where all the participants work on a specific alloted project. I participated in GSSoc'20 and worked on various projects. I had implemented some good features in 3 different projects.
+        GirlScript Summer of Code is a 3 month long internship where all the participants worked on a specific project. I participated in GSSoc'20 and worked on various projects as well. I had implemented some good features in different projects.
       </p>
     )
   }

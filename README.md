@@ -2,7 +2,7 @@
 - [x] Animation in button on homepage has to be upgraded a bit. 
 - [x] Background of navbar to be transparent
 - [x] Change Background color of modal in projects.
-- [ ] Height and font-size of navbar.
+- [x] Height and font-size of navbar.
 - [x] Font in not attractive, do this. 
 - [x] Logos in Skills on About Page and color theme as a shade of blue matching with theme.
 - [x] ::after effect in navbar on mobile version. 
@@ -18,11 +18,10 @@
 - [x] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
 - [x] Instagram Logo.
 - [x] Correctly set the Contact and Email in footer on desktop view.
-<!-- - [ ] Homepage p more projects p click karne s I'm directed at the end of the projects page but should be directed to the top.
-- [ ] Website Preloader -->
+- [ ] Website Preloader
 - [ ] Contact Page needs modification.
 - [x] Add some more Online Platforms.
 - [ ] Add "How to run this project" section in README.
 - [x] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
-- [ ] Check all the info and the links once again before deploying.
+- [x] Check all the info and the links once again before deploying.
 - [x] Font fmaily of heading in Contact page.

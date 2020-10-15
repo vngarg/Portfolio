@@ -22,7 +22,7 @@ const Skills = () => {
             </div>
             <div className="subHeading">Languages I speak</div>
             <div className="languages">
-              HTML, CSS, Javascript, Bootstrap, Nodejs, Reactjs, Mongodb, JQuery
+              HTML, CSS, Javascript, Bootstrap, Nodejs, Reactjs, Mongodb, JQuery, WordPress, Docker
             </div>
             <div className="subHeading">Dev Tools</div>
             <div className="tools">
@@ -41,8 +41,7 @@ const Skills = () => {
             </div>
             <div className="heading">Android Developer</div>
             <div className="description">
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+            Innovative Android Developer with great experience of developing and maintaining Android applications
             </div>
             <div className="subHeading">Languagaes I speak</div>
             <div className="languages">Flutter, Dart, Google Firebase</div>
@@ -52,6 +51,7 @@ const Skills = () => {
               <br />
               Android Studio
               <br />
+              StackoverFlow
             </div>
           </Col>
           <Col lg={4} sm={12} className="SkillColumn col3">
@@ -60,8 +60,7 @@ const Skills = () => {
             </div>
             <div className="heading">Competetive Programmer</div>
             <div className="description">
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+              A creative thinker, adept in software development and various data structures.
             </div>
             <div className="subHeading">Languagaes I speak</div>
             <div className="languages">C, C++, Java</div>
@@ -70,6 +69,8 @@ const Skills = () => {
               Visual Studio Code
               <br />
               Codechef
+              <br />
+              Geeks For Geeks
               <br />
               HackerEarth
               <br />

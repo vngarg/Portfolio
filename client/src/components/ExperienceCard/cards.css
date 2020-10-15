@@ -26,6 +26,10 @@
     border-radius: 27px;
 }
 
+a:hover {
+    color: white;
+}
+
 .Logo {
     vertical-align: middle;
     padding-top: 0 !important;
@@ -46,10 +50,6 @@
     margin-bottom: 7px;
 }
 
-/* .credential {
-    color: var(--color-blueShade);
-    font-weight: bold;
-} */
 .credential {
     background-color: var(--color-blueShade);
     color: white;

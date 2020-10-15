@@ -51,14 +51,6 @@ const Nav = styled.nav`
 const Navbar = ({ color }) => {
   var nav;
 
-  React.useEffect(() => {
-    function handleResize() {
-
-    }
-
-    window.addEventListener('resize', handleResize);
-  });
-
   if(window.innerWidth > 320 && window.innerWidth < 480) {
     nav = {
     width: "100%",

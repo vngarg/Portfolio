@@ -6,7 +6,7 @@ import Menu from "../../components/Nav/Navbar.jsx";
 import "./Home.css";
 import Skills from "../../components/Skills/Skills.js";
 import { Link } from "react-router-dom";
-import Shlok from '../../assets/images/Shlok.jpg';
+import Shlok from '../../assets/images/Shlok2.JPG';
 import HomePageProjects from '../../components/HomePageProjects/HomePageProjects';
 import Collaboration from "../../components/Collaboration/Collaboration.js";
 import Footer from '../../components/Footer/Footer';
@@ -29,8 +29,7 @@ class Hero extends Component {
             <Col xl={6} sm={12} className="text-left">
               <div className="Heading">Hey, I'm Shlok Garg.</div>
               <div className="HeroText">
-                I'm a MERN Stack developer and an Android developer from New
-                Delhi, India. I create appealing websites and Android apps.
+                I'm a MERN Stack developer, android developer and an avid social worker who works towards providing education to all.
               </div>
               <br />
               <Button className="button">
@@ -69,13 +68,13 @@ class Hero extends Component {
             </center>
             <Row>
               <Col lg={4} sm={12} className='column'>
-                <Certification Name='JP Morgan Chase & Company' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." link='https://drive.google.com/file/d/1OP4ion8X-vJr8v6PRtCofdV9llf0bpeM/view?usp=sharing' logo={JP} />
+                <Certification Name='JP Morgan Chase & Company' description="During this peroid, I familiarized myself with JPMorgan Chase frameworks and applied my technical skills to a hypothetical request from the firm’s trading floor to analyze and visualize data in a new way. This was really a great learning experience." link='https://drive.google.com/file/d/1OP4ion8X-vJr8v6PRtCofdV9llf0bpeM/view?usp=sharing' logo={JP} />
               </Col>
               <Col lg={4} sm={12} className='column'>
-                <Certification Name='Front-End Web development with Reactjs' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." logo={Coursera} link='https://drive.google.com/file/d/1r9hrTzVtVaGohY8G6nodyNFw4BxkVXye/view?usp=sharing' />
+                <Certification Name='Front-End Web development with Reactjs' description="Learnt front-end development, with server-side support, for implementing a multi-platform solution. Gained experience in working with React hooks, forms and authentication. Also gained command over Redux and Redux Thunk." logo={Coursera} link='https://drive.google.com/file/d/1r9hrTzVtVaGohY8G6nodyNFw4BxkVXye/view?usp=sharing' />
               </Col>
               <Col lg={4} sm={12} className='column'>
-                <Certification Name='Competitive Programming using C++' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." logo={CN} link='http://files.codingninjas.in/certificate1053383eb2c0c6b86d503e254b0379295140e03.pdf' />
+                <Certification Name='Competitive Programming using C++' description="Competitive Programming course helped me in enhancing my cognitive and problem-solving abilities. Now I'm able to solve hard coding problems efficiently. I had gained command over various Data Structures and had learnt a lot of Algorithms as well." logo={CN} link='http://files.codingninjas.in/certificate1053383eb2c0c6b86d503e254b0379295140e03.pdf' />
               </Col>
             </Row>
           </Container>

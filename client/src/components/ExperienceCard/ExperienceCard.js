@@ -65,12 +65,11 @@ const ExperienceCard = (props) => {
           <Row className='mb-3'>
             {tech}
           </Row>
-          {/* {tech} */}
           <a
-            href={props.WebisteLink}
-            className="credential"
+            href={props.websiteLink}
             target="_blank"
             rel="noopener noreferrer"
+            className="credential"
           >
             See the Work
           </a>

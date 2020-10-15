@@ -102,7 +102,7 @@ class Contact extends Component {
               </Col>
               <Col lg={6} sm={12}>
                 <div className="ques">
-                  Have a question or want to collaborate ??
+                  Have some questions or want to collaborate ??
                   <br />
                   Let me know !!
                 </div>
