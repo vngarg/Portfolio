@@ -4,12 +4,12 @@ import Footer from "../../components/Footer/Footer";
 import { Container } from "reactstrap";
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 
-import Gordian from '../../assets/Logos/Gordian.png';
-import SKCF from '../../assets/Logos/SKCF.jpg';
-import YuMedic from '../../assets/Logos/YuMedic.png';
+import Gordian from '../../assets/Logos/Gordian.jpeg';
+import SKCF from '../../assets/Logos/SKCF.jpeg';
+import YuMedic from '../../assets/Logos/YuMedic.jpeg';
 import GirlScript from '../../assets/Logos/GirlScript.jpeg';
-import Codebox from '../../assets/Logos/Codebox.jpg';
-import VKarma from '../../assets/Logos/VKarma.png';
+import Codebox from '../../assets/Logos/Codebox.jpeg';
+import VKarma from '../../assets/Logos/VKarma.jpeg';
 
 import HTMLIcon from "../../assets/Icons/HTML.png";
 import CSSIcon from "../../assets/Icons/CSS.png";
