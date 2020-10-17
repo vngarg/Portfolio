@@ -9,11 +9,11 @@ const Routes = () => {
     return (
         <div>
             <Switch>
-                <Route exact path='/About' component={HomePage} />
+                <Route exact path='/Portfolio' component={HomePage} />
                 <Route exact path='/Contact' component={Contact} />
                 <Route exact path='/Projects' component={Projects} />
                 <Route exact path='/Experience' component={Experience} />
-                <Redirect to='/About' />
+                <Redirect to='/Portfolio' />
             </Switch>
         </div>
     )

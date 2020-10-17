@@ -78,7 +78,7 @@ const Navbar = ({ color }) => {
   return (
     <Nav style={nav}>
       <div className="logo">
-        <Link to='/About' className='link'>
+        <Link to='/Portfolio' className='link'>
           S.G.
         </Link>
       </div>

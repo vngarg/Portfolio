@@ -6,7 +6,7 @@ import Menu from "../../components/Nav/Navbar.jsx";
 import "./Home.css";
 import Skills from "../../components/Skills/Skills.js";
 import { Link } from "react-router-dom";
-import Shlok from '../../assets/images/Shlok2.JPG';
+import Shlok from '../../assets/images/Shlok.jpg';
 import HomePageProjects from '../../components/HomePageProjects/HomePageProjects';
 import Collaboration from "../../components/Collaboration/Collaboration.js";
 import Footer from '../../components/Footer/Footer';
