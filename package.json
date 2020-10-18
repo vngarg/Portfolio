@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/vngarg/Portfolio/issues"
   },
-  "homepage": "https://github.com/vngarg/Portfolio#readme",
   "dependencies": {
     "axios": "^0.20.0",
     "concurrently": "^5.3.0",
