@@ -68,7 +68,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .mainDiv {
         top: -100px;
-        height: 313vh;
+        height: auto;
     }
     .ImgLogo {
         height: 200px !important;
