@@ -1,7 +1,7 @@
 # Portfolio
 This is my portfolio which is created using MERN Stack. You can view the website here: https://vngarg.github.io/Portfolio/
 
-### How to run the project 
+## How to run the project 
 Run the below commands to run the project. 
 ```
 npm install
