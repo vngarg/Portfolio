@@ -8,6 +8,7 @@
 - [x] ::after effect in navbar on mobile version. 
 - [ ] Try to make top image hexagon.
 - [ ] Update Favicon.
+- [ ] Resume not downloading.
 - [x] Description of all projects.
 - [x] Last m Made with love wali line add krni h.
 - [x] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
