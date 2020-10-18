@@ -8,7 +8,7 @@ import CP from '../../assets/images/CP.jpg';
 
 const Skills = () => {
   return (
-    <div className="mainDiv">
+    <div className="mainDiv mb-5">
       <Container>
         <Row className="text-center">
           <Col lg={4} sm={12} className="SkillColumn col1">
