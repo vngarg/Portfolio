@@ -1,29 +1,16 @@
+# Portfolio
+This is my portfolio which is created using MERN Stack. You can view the website here: https://vngarg.github.io/Portfolio/
+
+### How to run the project 
+Run the below commands to run the project. 
+```
+npm install
+cd client && npm install
+cd ..
+npm run dev
+```
+
 ## Todo
-- [x] Animation in button on homepage has to be upgraded a bit. 
-- [x] Background of navbar to be transparent
-- [x] Change Background color of modal in projects.
-- [x] Height and font-size of navbar.
-- [x] Font in not attractive, do this. 
-- [x] Logos in Skills on About Page and color theme as a shade of blue matching with theme.
-- [x] ::after effect in navbar on mobile version. 
-- [ ] Try to make top image hexagon.
-- [ ] Update Favicon.
-- [ ] Resume not downloading.
-- [x] Description of all projects.
-- [x] Last m Made with love wali line add krni h.
-- [x] Modify buttons in experience as in https://developerfolio.js.org/ certification wale section m.
-- [x] Add certifications on home page, upar wali website s example l sakte h.
-- [x] Add more and more colourfull icons. 
-- [x] Make width of company name in experience same as the content.
-- [x] Add technology section in experience.
-- [x] Expereince page m alt tags of all images. Check alt tag of all images in the entire project. 
-- [x] Add right and left wala aos effect to experience section. Left wala left s and right wala right s.
-- [x] Instagram Logo.
-- [x] Correctly set the Contact and Email in footer on desktop view.
+- [ ] Make Homepage image hexagon.
 - [ ] Website Preloader
-- [ ] Contact Page needs modification.
-- [x] Add some more Online Platforms.
-- [ ] Add "How to run this project" section in README.
-- [x] Test the menu on larger device, neeche wale section k saath issue aa sakta h overlaping ka.
-- [x] Check all the info and the links once again before deploying.
-- [x] Font fmaily of heading in Contact page.
+
