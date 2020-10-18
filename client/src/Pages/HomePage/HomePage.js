@@ -33,14 +33,14 @@ class Hero extends Component {
               </div>
               <br />
               <Button className="button">
-                <Link
+                <a
                   className="CV"
-                  to="../../assets/CV/Shlok's Resume.pdf"
+                  href="../../assets/CV/Shlok's Resume.pdf"
                   target="_blank"
                   download
                 >
                   Download CV
-                </Link>
+                </a>
               </Button>
             </Col>
           </Row>
