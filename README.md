@@ -12,5 +12,5 @@ npm run dev
 
 ## Todo
 - [ ] Make Homepage image hexagon.
-- [ ] Website Preloader
+- [x] Website Preloader
 
