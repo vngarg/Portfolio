@@ -26,7 +26,7 @@ const HomePageProjects = () => {
     BootstrapIcon,
     ReactIcon,
   ];
-  var MovieFinder = [FlutterIcon, DartIcon, AndroidIcon, APIicon];
+  var SortingVisualizer = [ReactIcon, JavascriptIcon];
 
   return (
     <div>
@@ -35,6 +35,16 @@ const HomePageProjects = () => {
           <h1 style={{ 'marginBottom': '46px' }}>My Projects</h1>
         </center>
         <Row>
+        <Col lg={6} sm={12}>
+            <ProjectCards
+              projectIcon={MovieFinderIcon}
+              projectName="Sorting Visualizer"
+              description="Applied various sorting techniques using ReactJs & Redux. User will be able to see the current step with the help of different colours used. So, now they can visualize the algorithm easily and will be able to check that which step is being performed."
+              projectLink="https://vngarg.github.io/Sorting-Visualizer/"
+              emoji1="🎉"
+              languages={SortingVisualizer}
+            />
+          </Col>
           <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={GithubIcon}
@@ -43,16 +53,6 @@ const HomePageProjects = () => {
               projectLink="https://githubfinder142.netlify.com/"
               emoji1="🔥"
               languages={GithubFinder}
-            />
-          </Col>
-          <Col lg={6} sm={12}>
-            <ProjectCards
-              projectIcon={MovieFinderIcon}
-              projectName="Movie Finder"
-              description="This application can give you the details of the latest movies. You can also watch their trailers and will also get their cast, IMDB rating along with various other details. It also shows the similar movies for your search."
-              projectLink="https://drive.google.com/file/d/1--mQe_Lc0k2NIKHB9kOtd7XS5pfndWbg/view?usp=sharing"
-              emoji1="🎉"
-              languages={MovieFinder}
             />
           </Col>
         </Row>

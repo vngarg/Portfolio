@@ -56,7 +56,7 @@ const Projects = () => {
     BootstrapIcon,
   ];
   var ITLogger = [ReactIcon, BootstrapIcon, HTMLIcon, JavascriptIcon, CSSIcon];
-  var JavascriptGame = [HTMLIcon, CSSIcon, JavascriptIcon, BootstrapIcon];
+  var SortingVisualizer = [ReactIcon, JavascriptIcon];
 
   return (
     <div>
@@ -64,6 +64,16 @@ const Projects = () => {
       <Container>
         <h1 className="mt-5 mb-5">My Projects</h1>
         <Row>
+        <Col lg={6} sm={12}>
+            <ProjectCards
+              projectIcon={MovieFinderIcon}
+              projectName="Sorting Visualizer"
+              description="Applied various sorting techniques using ReactJs & Redux. User will be able to see the current step with the help of different colours used. So, now they can visualize the algorithm easily and will be able to check that which step is being performed."
+              projectLink="https://vngarg.github.io/Sorting-Visualizer/"
+              emoji1="🎉"
+              languages={SortingVisualizer}
+            />
+          </Col>
           <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={GithubIcon}
@@ -74,7 +84,9 @@ const Projects = () => {
               languages={GithubFinder}
             />
           </Col>
-          <Col lg={6} sm={12}>
+        </Row>
+        <Row>
+        <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Movie Finder"
@@ -84,8 +96,6 @@ const Projects = () => {
               languages={MovieFinder}
             />
           </Col>
-        </Row>
-        <Row>
           <Col lg={6} sm={12}>
             <ProjectCards
               projectName="Anugoonj'20"
@@ -94,16 +104,6 @@ const Projects = () => {
               emoji1="🎡"
               projectLink="http://anugoonj-ipu.com/"
               languages={Anugoonj}
-            />
-          </Col>
-          <Col lg={6} sm={12}>
-            <ProjectCards
-              projectName="Corona Checker"
-              projectIcon={COVIDIcon}
-              description="This android application allows you to check the COVID-19 status of India, number of total and active patients along with the ones who didn't survived this disease. It also provide the details of various other countries. Some precautions and symptoms are listed as well."
-              emoji1="🏥"
-              projectLink="https://drive.google.com/file/d/1uHog1UkgrJ30IngJ7XgXkebj9-RiC49b/view?usp=sharing"
-              languages={CoronaCheck}
             />
           </Col>
         </Row>
@@ -130,6 +130,16 @@ const Projects = () => {
           </Col>
         </Row>
         <Row>
+        <Col lg={6} sm={12}>
+            <ProjectCards
+              projectName="Corona Checker"
+              projectIcon={COVIDIcon}
+              description="This android application allows you to check the COVID-19 status of India, number of total and active patients along with the ones who didn't survived this disease. It also provide the details of various other countries. Some precautions and symptoms are listed as well."
+              emoji1="🏥"
+              projectLink="https://drive.google.com/file/d/1uHog1UkgrJ30IngJ7XgXkebj9-RiC49b/view?usp=sharing"
+              languages={CoronaCheck}
+            />
+          </Col>
           <Col lg={6} sm={12}>
             <ProjectCards
               projectName="CodePlayer"
@@ -138,16 +148,6 @@ const Projects = () => {
               emoji1="🖥"
               projectLink="https://vngarg.github.io/CodePlayer/"
               languages={CodePlayer}
-            />
-          </Col>
-          <Col lg={6} sm={12}>
-            <ProjectCards
-              projectName="Breakout Game"
-              projectIcon={Game}
-              description="This is a simple Javascript game which is built majorliy using Canvas. This is the game which we all loved to play during our childhood days but have forgotten now. Let's see who reaches the highest level."
-              emoji1="🎮"
-              projectLink="https://vngarg.github.io/BrekOut-Game/"
-              languages={JavascriptGame}
             />
           </Col>
         </Row>
