@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17ce26933a9f25b347c4ad0199a124a2",
+    "revision": "46bdbaa4a71acca630b9a33fa469c903",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "0457f09a7f69f0b88372",
-    "url": "/Portfolio/static/css/2.72c43bd9.chunk.css"
+    "revision": "6798904a5b97a0c7c3ca",
+    "url": "/Portfolio/static/css/2.3f94071c.chunk.css"
   },
   {
-    "revision": "f409b831330ccd06420e",
-    "url": "/Portfolio/static/css/main.d81acea9.chunk.css"
+    "revision": "69fc124969e6668a741a",
+    "url": "/Portfolio/static/css/main.5b65acfa.chunk.css"
   },
   {
-    "revision": "0457f09a7f69f0b88372",
-    "url": "/Portfolio/static/js/2.0fbf7458.chunk.js"
+    "revision": "6798904a5b97a0c7c3ca",
+    "url": "/Portfolio/static/js/2.b1b0362b.chunk.js"
   },
   {
     "revision": "2069192f75c6f3fb6247231eea52f248",
-    "url": "/Portfolio/static/js/2.0fbf7458.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.b1b0362b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f409b831330ccd06420e",
-    "url": "/Portfolio/static/js/main.24531ab0.chunk.js"
+    "revision": "69fc124969e6668a741a",
+    "url": "/Portfolio/static/js/main.80a10d5e.chunk.js"
   },
   {
     "revision": "efed155d89bc85b81984",
@@ -60,16 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/Coursera.0e7f4e81.png"
   },
   {
-    "revision": "8f5ce27564945d2c9a10ef827549a78c",
-    "url": "/Portfolio/static/media/Facebook.8f5ce275.png"
+    "revision": "d7ff226bbe502c199eaf8c6e7d68c8f2",
+    "url": "/Portfolio/static/media/ESLint.d7ff226b.png"
   },
   {
     "revision": "39467d0f475eabfd3def899aff62d8e3",
     "url": "/Portfolio/static/media/Flutter.39467d0f.webp"
-  },
-  {
-    "revision": "c46d88dc57b22678b37d5acf5fbdbab6",
-    "url": "/Portfolio/static/media/Game.c46d88dc.png"
   },
   {
     "revision": "0ba2aa20e2c2ce80e9a2db5b07198464",
@@ -112,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/NEWS.8749c3a3.webp"
   },
   {
+    "revision": "59f7320dae35ebd7afe7252265269e1e",
+    "url": "/Portfolio/static/media/Quizizz.59f7320d.png"
+  },
+  {
     "revision": "4603f0d1d6482913bccc9693c93bcf5a",
     "url": "/Portfolio/static/media/React.4603f0d1.webp"
   },
@@ -124,8 +124,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/Shlok.f4e3838b.jpg"
   },
   {
+    "revision": "3253c7956adfc17b39a8609211fb0b04",
+    "url": "/Portfolio/static/media/TailwindCSS.3253c795.png"
+  },
+  {
     "revision": "413ec22612d4c1e3378a3b53350b5e60",
     "url": "/Portfolio/static/media/VKarma.413ec226.png"
+  },
+  {
+    "revision": "46c80a5cd2e54c646c98a9f939d8abc7",
+    "url": "/Portfolio/static/media/Vuejs.46c80a5c.png"
+  },
+  {
+    "revision": "034ae4e725f2aee9f78aa0644ae2d95c",
+    "url": "/Portfolio/static/media/YouTube.034ae4e7.png"
   },
   {
     "revision": "1ef6320bf6bfd2a87b869b6d4c1bb4f7",
