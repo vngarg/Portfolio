@@ -3,10 +3,10 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import LinkedIn from "../../assets/Icons/LinkedIn.png";
-import Github from '../../assets/Icons/Github.png';
-import Facebook from "../../assets/Icons/Facebook.png";
+import Github from "../../assets/Icons/Github.png";
+import YouTube from "../../assets/Icons/YouTube.png";
 import Gmail from "../../assets/Icons/Gmail.png";
-import Insta from '../../assets/Icons/Instagram.jpeg';
+import Insta from "../../assets/Icons/Instagram.jpeg";
 
 import "./styles.css";
 
@@ -14,12 +14,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <Container>
-        <Row className='pt-5 pb-3'>
+        <Row className="pt-5 pb-3">
           <Col lg={3}>
             <div className="name mb-3">S.G.</div>
             <div className="desc">
-              I'm a MERN Stack developer and an Android developer. An avid
-              social worker who works towards providing education to all.
+              I'm a MERN Stack developer and an Android developer. A
+              content-creator who works towards providing education to all.
             </div>
             <br />
             <div className="contact">
@@ -48,7 +48,7 @@ const Footer = () => {
           <Col lg={3}>
             <div className="head">Online Platforms</div>
             <ul>
-            <li>
+              <li>
                 <a
                   href="https://auth.geeksforgeeks.org/user/shlokgarg/practice/"
                   target="_blank"
@@ -82,45 +82,66 @@ const Footer = () => {
           </Col>
           <Col lg={3}>
             <div className="head">Get In Touch</div>
-            <ul className='SocialList'>
+            <ul className="SocialList">
+              <li>
+                <a
+                  href="https://sgcodes.tech/youtube"
+                  rel="noopener noreferrer"
+                >
+                  <img src={YouTube} alt="Youtube" className="SocialMedia" />
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/shlok-garg-0b216b191/"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={LinkedIn} alt="LinkedIn" className="SocialMedia" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/vngarg" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/vngarg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={Github} alt="GitHub" className="SocialMedia" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100004778597873"
-                  target="_blank" rel="noopener noreferrer"
+                  href="mailto:sngargrsd@gmail"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img src={Facebook} alt="Facebook" className="SocialMedia" />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:sngargrsd@gmail" target="_blank" rel="noopener noreferrer">
                   <img src={Gmail} alt="Gmail" className="SocialMedia" />
                 </a>
               </li>
               <li>
-                  <a href='https://www.instagram.com/sg_3105/' target='_blank' rel="noopener noreferrer">
-                      <img src={Insta} alt='Instagram' className='SocialMedia Insta' />
-                  </a>
+                <a
+                  href="https://www.instagram.com/sg_3105/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Insta}
+                    alt="Instagram"
+                    className="SocialMedia Insta"
+                  />
+                </a>
               </li>
             </ul>
           </Col>
         </Row>
-        <Row className='pb-2'>
-            <Col className='text-center'>
-            Made with ❤️ Shlok Garg
-            </Col> 
+        <Row className="pb-2">
+          <Col className="text-center">
+            Made with{" "}
+            <span role="img" aria-label="Heart Emoji">
+              ❤️
+            </span>{" "}
+            Shlok Garg
+          </Col>
         </Row>
       </Container>
     </div>

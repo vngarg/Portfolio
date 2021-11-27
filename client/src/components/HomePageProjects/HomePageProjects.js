@@ -11,10 +11,6 @@ import CSSIcon from "../../assets/Icons/CSS.png";
 import ReactIcon from "../../assets/Icons/React.webp";
 import JavascriptIcon from "../../assets/Icons/JavaScript.svg";
 import BootstrapIcon from "../../assets/Icons/Bootstrap.png";
-import FlutterIcon from "../../assets/Icons/Flutter.webp";
-import DartIcon from "../../assets/Icons/Dart.png";
-import AndroidIcon from "../../assets/Icons/Android.png";
-import APIicon from "../../assets/Icons/API.jpg";
 
 import "./style.css";
 
@@ -32,10 +28,10 @@ const HomePageProjects = () => {
     <div>
       <Container>
         <center>
-          <h1 style={{ 'marginBottom': '46px' }}>My Projects</h1>
+          <h1 style={{ marginBottom: "46px" }}>My Projects</h1>
         </center>
         <Row>
-        <Col lg={6} sm={12}>
+          <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Sorting Visualizer"
@@ -58,7 +54,7 @@ const HomePageProjects = () => {
         </Row>
         <center>
           <Link to="/Projects">
-            <Button color="primary" className='MoreButton'>
+            <Button color="primary" className="MoreButton">
               More Projects
             </Button>
           </Link>

@@ -40,24 +40,24 @@ class Hero extends Component {
             <Fragment>
               <div className="Hero">
                 <Menu color="transparent" />
-                <Row className="mr-0 mt-5">
+                <Row className="mr-0 mt-4 md:mt-5">
                   <Col xl={6} sm={12} className="text-center ImageDiv">
                     <img src={Shlok} alt="Shlok" className="HeroImage" />
                   </Col>
                   <Col xl={6} sm={12} className="text-left">
                     <div className="Heading">Hey, I'm Shlok Garg.</div>
                     <div className="HeroText">
-                      I'm a MERN Stack developer, android developer and an avid
-                      social worker who works towards providing education to
+                      I'm a MERN Stack developer, android developer and a
+                      content-creator who works towards providing education to
                       all.
                     </div>
                     <br />
                     <Button className="button">
                       <a
                         className="CV"
-                        href="../../assets/CV/Shlok's Resume.pdf"
+                        href="https://drive.google.com/file/d/13Ysty-R8loE1zww6zxBxoOvzm1X4X3EQ/view?usp=sharing"
                         target="_blank"
-                        download
+                        rel="noopener noreferrer"
                       >
                         Download CV
                       </a>

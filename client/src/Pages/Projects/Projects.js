@@ -13,7 +13,6 @@ import COVIDIcon from "../../assets/Icons/COVID.png";
 import AnugoonjIcon from "../../assets/Icons/Anugoonj.webp";
 import CodePlayerIcon from "../../assets/Icons/CodePlayer.png";
 import LogsIcon from "../../assets/Icons/Logs.png";
-import Game from "../../assets/Icons/Game.png";
 
 import HTMLIcon from "../../assets/Icons/HTML.png";
 import CSSIcon from "../../assets/Icons/CSS.png";
@@ -64,7 +63,7 @@ const Projects = () => {
       <Container>
         <h1 className="mt-5 mb-5">My Projects</h1>
         <Row>
-        <Col lg={6} sm={12}>
+          <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Sorting Visualizer"
@@ -86,7 +85,7 @@ const Projects = () => {
           </Col>
         </Row>
         <Row>
-        <Col lg={6} sm={12}>
+          <Col lg={6} sm={12}>
             <ProjectCards
               projectIcon={MovieFinderIcon}
               projectName="Movie Finder"
@@ -130,7 +129,7 @@ const Projects = () => {
           </Col>
         </Row>
         <Row>
-        <Col lg={6} sm={12}>
+          <Col lg={6} sm={12}>
             <ProjectCards
               projectName="Corona Checker"
               projectIcon={COVIDIcon}
