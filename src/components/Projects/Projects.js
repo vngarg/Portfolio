@@ -19,6 +19,37 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Anubhuti"
+              description="Our mission is simple – to curate exceptional journeys that go beyond the ordinary and create cherished memories that last a lifetime. We strive to showcase the diverse beauty of India, from its majestic landscapes and architectural marvels to its vibrant cultures and warm hospitality. We believe in creating personalized itineraries that cater to the unique interests "
+              demoLink="https://anubhuti.great-site.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Skill Master"
+              description="Whether it's a wedding, a family portrait session, a corporate event, or a personal project, I approach each opportunity with professionalism, dedication, and a genuine enthusiasm for capturing extraordinary moments. I believe that every photograph has the power to evoke emotions, preserve memories, and transcend time, and I consider it a privilege to be entrusted with that responsibility."
+              demoLink="https://skillmaster.great-site.net"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="India Bazaar"
+              description="Discover a kaleidoscope of choices right at your fingertips! From the snowy peaks of the Himalayas to the sun-kissed beaches of the south, India Bazaar celebrates the diversity of our nation by bringing together the best of Indian craftsmanship and regional specialties. Delve into a Vast Assortment of Products: Whether you're seeking traditional ethnic or vibrant sarees, elegant kurta sets."
+              demoLink="https://indiabazaar.great-site.net"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
