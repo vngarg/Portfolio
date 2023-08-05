@@ -31,6 +31,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="Masala Mantra"
+              description="Masala Mantra is an enchanting online restaurant that takes you on a captivating culinary voyage through the diverse flavors of India. Inspired by the aromatic spices and rich traditions of our vibrant country, Masala Mantra presents a feast that tantalizes your taste buds and ignites your senses. From timeless classics to contemporary delights, our carefully curated menu celebrates India."
+              demoLink="https://masalamantra.great-site.net"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={editor}
               isBlog={false}
               title="Skill Master"
@@ -38,17 +48,6 @@ function Projects() {
               demoLink="https://skillmaster.great-site.net"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="India Bazaar"
-              description="Discover a kaleidoscope of choices right at your fingertips! From the snowy peaks of the Himalayas to the sun-kissed beaches of the south, India Bazaar celebrates the diversity of our nation by bringing together the best of Indian craftsmanship and regional specialties. Delve into a Vast Assortment of Products: Whether you're seeking traditional ethnic or vibrant sarees, elegant kurta sets."
-              demoLink="https://indiabazaar.great-site.net"
-            />
-          </Col>
-
 
           <Col md={4} className="project-card">
             <ProjectCard
